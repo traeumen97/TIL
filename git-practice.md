@@ -1,4 +1,4 @@
-# <span style="color:#79b3b7">Git</span>
+# <span>Git</span>
 
 > ### 깃은 버전관리 시스템이다
 
@@ -93,10 +93,17 @@
 - 원격 저장소를 [로컬저장소명]에 복사하기 
 
         git clone [원격 저장소 주소]
+- 파일 내용 확인
 
-<br><br>
+        git cat
+<br>
+
+---
+
+<br>
 
 ## <span style="color:#f6a296">VI편집기(명령어로 조작하는 텍스트 에디터) 사용법</span>
+<br>
 
 - insert 모드 - 편집 시작
 
@@ -116,3 +123,6 @@
 - 저장 후 강제종료
 
         :wq!
+- 에디터 변경
+
+        git config --global core.editor "[에디터 이름 ex)nano]"
