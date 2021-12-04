@@ -14,7 +14,9 @@
 
 3. `cd .ssh` : .ssh 폴더로 들어감
 4. `pwd` : 현재 경로 확인
-5. `ssh-keygen -t ed25519 -C "traeumen97@naver.com"` : ssh key 생성
+5. `ssh-keygen -t ed25519 -C "traeumen97@naver.com"` : ssh key 생성 
+(비밀번호 입력하면 푸시할때마다 비빌번호 입력해야됨)
+
 6. `ls-al` : .pub / pub없는 파일 생성됐는지 확인
    - .pub 파일 : 공개 키
    - .pub이 없는 파일 : 개인 키 &#10141; 아무한테도 주면 안됨
@@ -64,7 +66,7 @@
 
     &#10141; ssh-origin 이라는 이름으로 등록 됨
 21. `git remote remove origin` : http origin 삭제
-22. `git remote rename ssh-origin origin : ssh-origin의 이름을 origin으로 변경
+22. `git remote rename ssh-origin origin` : ssh-origin의 이름을 origin으로 변경
 23. `git push` 했을 때 `git push --set-upstream origin main` 나와서 그래도 복사 붙여넣기 함
 
     &#10141; 통신할 때 fetch, pull, push 명령어 쓰는데
