@@ -31,7 +31,17 @@
 
 ### branch 삭제
 
-`git branch -d [브랜치명]` : 브랜치 삭제
+1. 지역저장소에서 브랜치 삭제
+    
+    `git branch -d [브랜치명]` : 브랜치 삭제
+
+    `git branch` : 삭제됐는지 확인
+
+2. 원격저장소에서 브랜치 삭제
+
+    `git push origin --delete [브랜치명]` : 브랜치 삭제
+
+    `git branch -a` : 삭제됐는지 확인
 
 <br>
 
