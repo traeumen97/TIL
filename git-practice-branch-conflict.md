@@ -139,3 +139,40 @@
 5. `cat [신규작업파일]` : 파일 내용 확인
    - merge실행 이전의 파일 내용과 같은 것을 확인할 수 있다.
 6. 새로 작성할 파일을 다시 작업하고 머지하고나 new branch의 내용으로 merge 처리
+
+---
+
+## git branch 연습
+
+### git branch가 필요한 이유
+- 아직 완성되지 않은 내용이 중요한 메인 브랜치에 나오면 안되는 상태일 때 유요하게 쓰일 수 있다.
+  - 메인브랜치는 모두가 볼 수 있음
+  - 짜장면 레시피를 만들었음
+  - 짜장면 레시피가 아직 완성되지 않았음
+  - 짜장면 레시피는 아직 보여주면 안됨
+  - 짜장면 레시피를 다른데서 더 작성하고싶음
+  - 그래서 짜장면 브랜치를 따로 만들었음
+
+1. `git branch black-noodle`: 브랜치 생성
+2. `git branch`: 브랜치 잘 생성됐는지 확인
+3. `git checkout black-noonle`: black-noodle 브랜치로 이동
+4. `git branch`: 잘 이동됐는지 확인
+5. git add / commit / push
+   
+   `git push origin black-noodle`: 특정 브랜치 지정해서 푸시
+6. `git branch black-noodle`: 브랜치 생성 - 다른 컴퓨터에 아직 원격 저장소의 상태를 동기화 시키지 않았기 때문
+7. `git branch`: 잘 생성됐는지 확인
+8. `git checkout black-noodle`: black-noodle 브랜치로 이동
+9. `git pull origin black-noodle`: black-noodle에 있는 내용 가져오기
+
+### git merge가 필요한 이유
+- 다른데서 작업한 내용이 완성돼서 공개할 수 있게됨
+- 메인 브랜치에 합쳐서 공개하고싶어짐
+
+1. `git branch`:  브랜치 위치 확인
+2. `git checkout main`: 옮기고 싶은 브랜치로 이동
+3. `git fetch`: 원격저장소에 있는 상태 전체를 로컬에 가져옴
+   `git fetch origin black-noodle`: 원하는 브랜치의 상태를 로컬에 가져옴
+4. `git log --graph --oneline -all`: 원격과 로컬의 모든 브랜치의 현재 상태 확인
+5. `git merge origin/black-noodle`: 블랙 누들의 내용을 메인으로 머지
+6. `git log --graph --oneline -all`: 잘 머지가 됐는지 확인
