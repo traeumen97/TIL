@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html  lang="ko">
+
+    <head>
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+	   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  
+          <title>Food Sense ｜ Plant-Based Eating At Its Best</title>
+	   <meta name="description" content="Blueprint: Horizontal Drop-Down Menu" />
+       <meta name="keywords" content="html5" />
+       <meta name="author" content="cocomiz" />
+       <meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+ 
+ <!-- Pulled from http://code.google.com/p/html5shiv/ -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="all">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="contribute.css">
+
+<!--basic-js1-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+<!--basic-js2-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ <style>
+@media screen and (max-width:600px) {
+.wrap{width: 320px;}
+
+*{margin:0px; padding:0px;}
+body {font-family: "Georgia", serif; font-size: 12px; color: #333;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none; color: #333;}
+h1, h2, h3, h4, h5, h6 {font-family: "Georgia", serif;}
+
+.hide {display: none;}
+.screen_out {text-indent: -9999px; overflow: hidden; display: block; width: 0; height: 0;}
+.hidetext {position: absolute; top: -9999em;}
+
+.wrap {width: 320px; margin: 10px auto; overflow: hidden;}
+header {width: 320px; float: left; position: relative; padding-top: 50px;}
+h1 {text-indent: -9999em; overflow: hidden; background: url(../img/food-sense.png) no-repeat 100px 0; width: 320px; float: left; height: 120px;}
+nav {width: 320px; float: left; margin-top: 20px; border-bottom: 2px solid #e5e5e5; position: absolute; top: 0; left: 0;}
+nav ul {float: left;}
+nav ul li {padding: 5px; float: left; padding-left: 10px;}
+nav ul li a {font-size: 12px; color: #34AC98;}
+nav ul li a:hover {color: #ee6635;}
+
+.aside1 {clear: both; width: 150px; float: left; margin-right: 20px; margin-top: 30px; display: none;}
+.aside1 h2 {width: 150px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px; margin-bottom: 70px;}
+.aside1 p {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(img/icon-twitter-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside1 p:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.aside2 {width: 150px; margin-top: 30px; float: left; display: none;}
+.aside2 h2 {width: 150px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside2 .bottom_p1 {font-size: 10px; font-style: italic; padding-top: 10px; line-height: 1.7em;}
+.aside2 .bottom_p2 {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(img/icon-facebook-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside2 .bottom_p2:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.mainContents {width: 320px; float: left;}
+
+.Contribute {width: 320px; float: left;}
+.Contribute header {width: 320px; float: left; border-bottom: 2px solid #e5e5e5;}
+.Contribute h2 {font-size: 30px; font-weight: 400; padding-left: 60px; background: url(../img/camera.png) no-repeat; line-height: 2.2em;}
+.con_p {font-style: italic; font-size: 10px; margin-bottom: 20px; margin-top: 5px; line-height: 1.5em;}
+.con_p2 {font-weight: 700; margin-bottom: 30px;}
+
+.contribute_left {width: 320px; margin-right: 10px; float: left;}
+.contribute_left_1 {margin-top: 30px;}
+.contribute_left_1 h3 {font-size: 18px; margin-bottom: 20px;}
+.contribute_left_1_p1 {font-size: 14px; margin: 20px 0; line-height: 1.5em; text-align: justify;}
+.contribute_left_1 a {color: #34AC98; font-size: 14px; border-bottom: 2px dotted #eee;}
+.contribute_left_1 a:hover {background-color: #eff8f7; color: #ee6635;}
+.contribute_left_1 span {font-weight: 700;}
+.contribute_left_1_p2 {line-height: 2em; margin-top: 20px; text-align: justify;}
+.contribute_left_1_p3 {font-style: italic; line-height: 2em; text-align: justify;}
+
+.contribute_right {width: 320px; float: right;}
+.contact {}
+.contact_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.contact_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88;}
+.contact_p2 span {}
+.contact_p3 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.contact_p3 span {}
+
+.faqs {}
+.faqs_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.faqs_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.faqs_p2 span {}
+.contribute_right a {color: #34AC98; border-bottom: 2px dotted #eee;}
+.contribute_right a:hover {background-color: #eff8f7; color: #ee6635;}
+
+.weeklynewsletter {}
+.weekly_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.weekly_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 10px;}
+.subscride {width: 80px; line-height: 1.2em; margin-top: 10px;}
+
+.bottom {clear: both; width: 320px; float: left; border-top: 2px solid #e5e5e5; padding-top: 20px; margin-bottom: 30px; position: relative; margin-top: 40px;}
+.bottom_list {overflow: hidden;}
+.bottom_list li {display: inline; padding: 0 5px; background: url(img/list.jpg) repeat-y; margin-left: -2px;}
+.bottom_list li a {color: #34ac98; font-size: 10px;}
+.bottom_list li a:hover {color: #ee6635;}
+.bottom p {color: #aaa; line-height: 2em; padding-left: 2px; font-size: 10px;}
+
+.bottom_sns {position: absolute; top: 20px; right: 0;}
+.bottom_sns ul {}
+.bottom_sns ul li {display: inline; float: left; padding-left: 5px;}
+.bottom_sns ul li a {display: block; width: 32px; height: 32px; opacity: 0.4; text-indent: -9999em;}
+.bottom_sns ul li a:hover {opacity: 1;}
+
+.bottom_sns .twitter a {background: url(../img/icon-twitter.png) no-repeat -15px 0;}
+.bottom_sns .facebook a {background: url(../img/icon-facebook.png) no-repeat -15px 0;}
+.bottom_sns .rss a {background: url(../img/icon-rss.png) no-repeat -15px 0;}
+}
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+*{margin: 0; padding: 0;}
+body {font-family: "Georgia", serif; font-size: 12px; color: #333;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none; color: #333;}
+h1, h2, h3, h4, h5, h6 {font-family: "Georgia", serif;}
+
+.hide {display: none;}
+.screen_out {text-indent: -9999px; overflow: hidden; display: block; width: 0; height: 0;}
+.hidetext {position: absolute; top: -9999em;}
+
+.wrap {width: 580px; margin: 0 auto;}
+header {width: 580px; float: left;}
+h1 {text-indent: -9999em; overflow: hidden; background: url(../img/food-sense.png) no-repeat left 0; width: 120px; float: left; height: 120px;}
+nav {width: 460px; float: right; margin-top: 40px; margin-bottom: 10px;}
+nav ul {width: 440px; float: right;}
+nav ul li {padding: 20px; padding-top: 50px; float: left; text-align: right;}
+nav ul li a {font-size: 12px; color: #34AC98; font-style: italic;}
+nav ul li:first-child {background: url(../img/nav-tastemakers.png) no-repeat 40px 10px;}
+nav ul li:first-child:hover {background: url(../img/nav-tastemakers.png) no-repeat 45px 10px;}
+nav ul li:nth-child(2) {background: url(../img/nav-blog.png) no-repeat 15px 10px;}
+nav ul li:nth-child(2):hover {background: url(../img/nav-blog.png) no-repeat 25px 10px;}
+nav ul li:nth-child(3) {background: url(../img/nav-alist.png) no-repeat 30px 10px;}
+nav ul li:nth-child(3):hover {background: url(../img/nav-alist.png) no-repeat 35px 10px;}
+nav ul li:nth-child(4) {background: url(../img/nav-contribute.png) no-repeat 30px 10px;}
+nav ul li:nth-child(4):hover {background: url(../img/nav-contribute.png) no-repeat 35px 10px;}
+nav ul li:last-child {background: url(../img/nav-about.png) no-repeat 20px 10px;}
+nav ul li:last-child:hover {background: url(../img/nav-about.png) no-repeat 25px 10px;}
+nav ul li a:hover {color: #ee6635;}
+
+.aside1 {width: 190px; float: left; margin-top: 30px; display: none;}
+.aside1 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px; margin-bottom: 70px;}
+.aside1 p {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(img/icon-twitter-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside1 p:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.aside2 {width: 190px; margin-top: 30px; float: left; display: none;}
+.aside2 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside2 .bottom_p1 {font-size: 10px; font-style: italic; padding-top: 10px; line-height: 1.7em;}
+.aside2 .bottom_p2 {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(../img/icon-facebook-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside2 .bottom_p2:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.mainContents {width: 580px; float: left;}
+
+.Contribute {width: 580px; float: left; margin-top: 40px;}
+.Contribute header {width: 580px; float: left; border-bottom: 2px solid #e5e5e5;}
+.Contribute h2 {font-size: 30px; font-weight: 400; padding-left: 60px; background: url(../img/camera.png) no-repeat; line-height: 2.2em;}
+.con_p {font-style: italic; font-size: 12px; margin-bottom: 20px; margin-top: 5px; line-height: 1.5em;}
+.con_p2 {font-weight: 700; margin-bottom: 30px;}
+
+.contribute_left {width: 465px; margin-right: 10px; float: left;}
+.contribute_left_1 {margin-top: 30px;}
+.contribute_left_1 h3 {font-size: 18px; margin-bottom: 20px;}
+.contribute_left_1_p1 {font-size: 14px; margin: 20px 0; line-height: 1.5em; text-align: justify;}
+.contribute_left_1 a {color: #34AC98; font-size: 14px; border-bottom: 2px dotted #eee;}
+.contribute_left_1 a:hover {background-color: #eff8f7; color: #ee6635;}
+.contribute_left_1 span {font-weight: 700;}
+.contribute_left_1_p2 {line-height: 2em; margin-top: 20px;  text-align: justify;}
+.contribute_left_1_p3 {font-style: italic; line-height: 2em;  text-align: justify;}
+
+.contribute_right {width: 105px; float: right;}
+.contact {}
+.contact_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.contact_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88;}
+.contact_p2 span {}
+.contact_p3 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.contact_p3 span {}
+
+.faqs {}
+.faqs_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 10px;}
+.faqs_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.faqs_p2 span {}
+.contribute_right a {color: #34AC98; border-bottom: 2px dotted #eee;}
+.contribute_right a:hover {background-color: #eff8f7; color: #ee6635;}
+
+.weeklynewsletter {}
+.weekly_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 10px;}
+.weekly_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.subscride {width: 80px; line-height: 1.2em; margin-top: 10px;}    
+    
+.bottom {clear: both; width: 580px; float: left; border-top: 2px solid #e5e5e5; padding-top: 20px; margin-bottom: 30px; position: relative; margin-top: 30px;}
+.bottom_list {overflow: hidden;}
+.bottom_list li {display: inline; padding: 0 5px; background: url(../img/list.jpg) repeat-y; margin-left: -2px;}
+.bottom_list li a {color: #34ac98; font-size: 12px;}
+.bottom_list li a:hover {color: #ee6635;}
+.bottom p {color: #aaa; line-height: 2em; padding-left: 2px;}
+
+.bottom_sns {position: absolute; top: 20px; right: 0;}
+.bottom_sns ul {}
+.bottom_sns ul li {display: inline; float: left; padding-left: 5px;}
+.bottom_sns ul li a {display: block; width: 32px; height: 32px; opacity: 0.4; text-indent: -9999em;}
+.bottom_sns ul li a:hover {opacity: 1;}
+
+.bottom_sns .twitter a {background: url(../img/icon-twitter.png) no-repeat -15px 0;}
+.bottom_sns .facebook a {background: url(../img/icon-facebook.png) no-repeat -15px 0;}
+.bottom_sns .rss a {background: url(../img/icon-rss.png) no-repeat -15px 0;}
+}
+
+@media screen and (min-width:1024px) {
+*{margin:0; padding:0;}
+body {font-family: "Georgia", serif; font-size: 12px; color: #333;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none; color: #333;}
+h1, h2, h3, h4, h5, h6 {font-family: "Georgia", serif;}
+
+.hide {display: none;}
+.screen_out {text-indent: -9999px; overflow: hidden; display: block; width: 0; height: 0;}
+.hidetext {position: absolute; top: -9999em;}
+
+.wrap {width: 950px; margin: 40px auto; overflow: hidden;}
+header {width: 190px; margin-right: 10px; float: left;}
+h1 {width: 120px; height: 121px; float: left; text-indent: -9999em; overflow: hidden; white-space: nowrap; background: url(../img/food-sense.png) no-repeat 0 0;}
+nav {width: 190px; float: left; margin-top: 10px; margin-bottom: 50px;}
+nav ul {width: 190px; float: left;}
+nav ul li {width: 190px; float: left; text-indent: 55px; line-height: 4.2em;}
+nav ul li a {font-size: 15px; color: #34AC98; font-style: italic;}
+nav ul li:first-child {background: url(../img/nav-tastemakers.png) no-repeat 10px 10px;}
+nav ul li:first-child:hover {background: url(../img/nav-tastemakers.png) no-repeat 15px 10px;}
+nav ul li:nth-child(2) {background: url(../img/nav-blog.png) no-repeat 10px 10px;}
+nav ul li:nth-child(2):hover {background: url(../img/nav-blog.png) no-repeat 15px 10px;}
+nav ul li:nth-child(3) {background: url(../img/nav-alist.png) no-repeat 10px 10px;}
+nav ul li:nth-child(3):hover {background: url(../img/nav-alist.png) no-repeat 15px 10px;}
+nav ul li:nth-child(4) {background: url(../img/nav-contribute.png) no-repeat 10px 10px;}
+nav ul li:nth-child(4):hover {background: url(../img/nav-contribute.png) no-repeat 15px 10px;}
+nav ul li:last-child {background: url(../img/nav-about.png) no-repeat 10px 10px;}
+nav ul li:last-child:hover {background: url(../img/nav-about.png) no-repeat 15px 10px;}
+nav ul li a:hover {color: #ee6635;}
+
+.aside1 {width: 190px;}
+.aside1 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside1 p {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(../img/icon-twitter-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside1 p:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.aside2 {width: 190px; margin-top: 30px;}
+.aside2 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside2 .bottom_p1 {font-size: 10px; font-style: italic; padding-top: 10px; line-height: 1.7em;}
+.aside2 .bottom_p2 {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(../img/icon-facebook-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside2 .bottom_p2:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.mainContents {width: 750px; float: right;}
+
+.Contribute {width: 750px; float: left; margin-top: 40px;}
+.Contribute header {width: 750px; float: left; border-bottom: 2px solid #e5e5e5;}
+.Contribute h2 {font-size: 30px; font-weight: 400; padding-left: 60px; background: url(../img/camera.png) no-repeat; line-height: 2.2em;}
+.con_p {font-style: italic; font-size: 14px; margin-bottom: 20px; margin-top: 5px; line-height: 1.5em;}
+.con_p2 {font-weight: 700; margin-bottom: 30px;}
+
+.contribute_left {width: 550px; margin-right: 10px; float: left;}
+.contribute_left_1 {margin-top: 30px;}
+.contribute_left_1 h3 {font-size: 18px; margin-bottom: 20px;}
+.contribute_left_1_p1 {font-size: 14px; margin: 20px 0; line-height: 1.5em;}
+.contribute_left_1 a {color: #34AC98; font-size: 14px; border-bottom: 2px dotted #eee;}
+.contribute_left_1 a:hover {background-color: #eff8f7; color: #ee6635;}
+.contribute_left_1 span {font-weight: 700;}
+.contribute_left_1_p2 {line-height: 2em; margin-top: 20px;}
+.contribute_left_1_p3 {font-style: italic; line-height: 2em;}
+
+.contribute_right {width: 190px; float: right;}
+.contact {}
+.contact_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.contact_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88;}
+.contact_p2 span {}
+.contact_p3 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.contact_p3 span {}
+
+.faqs {}
+.faqs_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.faqs_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.faqs_p2 span {}
+.contribute_right a {color: #34AC98; border-bottom: 2px dotted #eee;}
+.contribute_right a:hover {background-color: #eff8f7; color: #ee6635;}
+
+.weeklynewsletter {}
+.weekly_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.weekly_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.subscride {width: 80px; line-height: 1.2em; margin-top: 10px;}
+    
+.bottom {clear: both; width: 950px; float: left; border-top: 2px solid #e5e5e5; padding-top: 20px; margin-bottom: 30px; position: relative; margin-top: 40px;}
+.bottom_list {overflow: hidden;}
+.bottom_list li {display: inline; padding: 0 5px; background: url(../img/list.jpg) repeat-y; margin-left: -2px;}
+.bottom_list li a {color: #34ac98; font-size: 12px;}
+.bottom_list li a:hover {color: #ee6635;}
+.bottom p {color: #aaa; line-height: 2em; padding-left: 2px;}
+
+.bottom_sns {position: absolute; top: 20px; right: 0;}
+.bottom_sns ul {}
+.bottom_sns ul li {display: inline; float: left; padding-left: 5px;}
+.bottom_sns ul li a {display: block; width: 32px; height: 32px; opacity: 0.4; text-indent: -9999em;}
+.bottom_sns ul li a:hover {opacity: 1;}
+
+.bottom_sns .twitter a {background: url(../img/icon-twitter.png) no-repeat -15px 0;}
+.bottom_sns .facebook a {background: url(../img/icon-facebook.png) no-repeat -15px 0;}
+.bottom_sns .rss a {background: url(../img/icon-rss.png) no-repeat -15px 0;}  
+} 
+ </style>
+
+
+
+</head> 
+
+<body>
+<!--wrap 시작-->	
+<div class="wrap">
+	<header>
+	    <a href="../index.html"><h1>foodsense</h1></a>
+	    <nav>
+	        <h2 class="hidetext">navigation</h2>
+	        <ul>
+	            <li><a href="../tastemakers/tastemakers.html">Tastemakers</a></li>
+	            <li><a href="../blog/blog.html">Blog</a></li>
+	            <li><a href="../thealist/thealist.html">The A-List</a></li>
+	            <li><a href="contribute.html">Contribute</a></li>
+	            <li><a href="../about/about.html">About</a></li>
+	        </ul>
+	    </nav>
+	</header><!-- header -->
+	
+	<div class="mainContents">
+	<section class="Contribute">
+    <header>
+	    <h2>Contribute</h2>
+	    <p class="con_p">Food Sense is created by a community of thoughtful, food-loving eaters and home cooks who<br> have a palate for plant-based eating - for themselves or their loved ones; three days a week, or<br> every day of the year.</p>
+	    <p class="con_p2">We want to hear from you!</p>
+    </header>
+    </section>
+    
+    <section class="contribute_left">
+        <h3 class="hidetext">Contribute</h3>
+        
+        <article class="contribute_left_1">
+            <h3>Submit a Recipe to the Tastemakers Gallery:</h3>
+            <p class="contribute_left_1_p1">Food Sense readers love cooking and eating really good food. Snag a spot in our Tastemakers Gallery for your dependably delicious creations, and help us all continue to share and spread that love.</p>
+            <p><a href="#">Submit a recipe.</a></p>
+            <p class="contribute_left_1_p2"><span>The fine print:</span> A spot in the Tastemakers Gallery includes a photo, short description of your recipe, and a link back to your original post. Food Sense will always credit your photos and recipes. You are welcome to submit more than one recipe to the Gallery, and to return back here in the future to submit new recipes. However, in the interest of giving our readers the very best, please note that Food Sense reserves the right to test and select which recipes will be posted to the site.</p>
+        </article>
+        
+        <article class="contribute_left_1">
+            <h3>Get Interviewed for our Monologues series:</h3>
+            <p class="contribute_left_1_p1">The Food Sense Monologues series is a collection of voices, each sharing a distinct journey to a plant-based lifestyle, and each inspiring others.</p>
+            <p class="contribute_left_1_p3">When and why did you make the switch? What’s been challenging, and how have you dealt with those challenges? How do you share Thanksgiving with your family? What do you eat when you take important clients out to dinner? What did you eat for lunch today?</p>
+            <p class="contribute_left_1_p1">Add your story to our collection. <a href="#">Submit an interview request.</a></p>
+        </article>
+        
+        <article class="contribute_left_1">
+            <h3>Apply to Join The A-List:</h3>
+            <p class="contribute_left_1_p1">The Food Sense A-List is a thoughtfully curated collection of favorite vendors and is designed to give our readers the very best of a plant-based lifestyle. The A-List offers readers a worry-free consumer experience with handpicked products and companies. All of our A-List vendors enjoy an exclusive showcase that affirms a collective commitment to quality.</p>
+            <p class="contribute_left_1_p1">We look forward to considering your company for inclusion on our List. <a href="#">Submit an application.</a></p>
+        </article>
+        
+        <article class="contribute_left_1">
+            <h3>Write for the Food Sense Blog:</h3>
+            <p class="contribute_left_1_p1">We welcome guest posts by bloggers and writers from around the world. Send us an e-mail at <a href="#">hello@foodsense.is</a> with “Proposal for guest post” as your subject line. In the body of your e-mail, please provide a summary of your proposed guest post and two samples of your writing (as attached documents or links to your other work on the web).</p>
+            
+            <p class="contribute_left_1_p1">We are also looking for regular contributors to the Food Sense blog who can provide a specific and continually engaging perspective on eating and enjoying a plant-based diet.</p>
+            
+            <p class="contribute_left_1_p1">Perhaps you’re a vegan parent and can share a weekly perspective on what it’s like to cook and eat in your home? Maybe you’re someone who dines out regularly in New York City and can share your experiences with our readers? Perhaps you’re cooking your way through a specific cookbook and want to share your experiences and photos with our readers?</p>
+	        
+	        <p class="contribute_left_1_p1">Whatever your point of view, if you’re interested in writing for us, we’d love to hear from you. Send us an e-mail at <a href="#">hello@foodsense.is</a> with “Proposal for Food Sense column” as your subject line. In the body of your e-mail, please tell us what you’d like to write about. Also provide two samples of your writing (as attached documents, or links to your other work on the web). One of these writing samples should be a draft first post for your proposed column.</p>
+	        
+	        <p class="contribute_left_1_p1">We will read every submission that we get. You’ll hear back from us within a week.</p>
+        </article>
+    </section><!-- contribute left -->
+    
+    
+    <section class="contribute_right">
+    <article class="contact">
+            <p class="contact_p">Contact</p>
+	        <p class="contact_p2">Share your tips. Contribute to our blog. Tell us what you think: E-mail us at<br><a href="#">hello@foodsense.is</a>.</p>
+	        <p class="contact_p3">You can also follow us on Twitter (<a href="#">@getfoodsense</a>) or connect with us on <a href="#">Facebook</a>.</p>
+	 </article>
+   
+    <article class="faqs">
+            <p class="faqs_p">FAQs</p>
+	        <p class="faqs_p2">You have questions, we have answers. <a href="#">View our frequently asked questions »</a></p>
+	 </article>
+	    
+	<article class="weeklynewsletter">
+            <p class="weekly_p">Food Sense Weekly Newsletter</p>
+	        <p class="weekly_p2">Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</p>
+	        <form action="email.php" method="post">
+	        <input type="Email" size="25" maxlength="20" placeholder="Email" class="such">
+	        <button type="button" class="subscride">Subscribe</button>
+	 </article> 
+	 </section><!-- contribute right -->
+	 </div>   
+	
+	<aside class="aside1">
+	    <h2>LATEST TWEET</h2>
+	    <p>Join the Conversation</p>
+	</aside>
+	
+	<aside class="aside2">
+	    <h2>LET'S BE FRIENDS</h2>
+	    <p class="bottom_p1">For weekly finds, community<br>recommendations, and more,<br> like us on Facebook</p>
+	    <p class="bottom_p2">Join the Community</p>
+	</aside><!-- aside -->
+	
+	<footer class="bottom">
+	    <ul class="bottom_list">
+	        <li><a href="#">Privacy Policy</a></li>
+	        <li><a href="#">Terms of Use</a></li>
+	        <li><a href="#">Contact</a></li>
+	    </ul>
+	    <p>© 2016 Food Sense, all rights reserved.</p>
+	    
+	    <div class="bottom_sns">
+	        <ul>
+	            <li class="twitter"><a href="#">Twitter</a></li>
+	            <li class="facebook"><a href="#">Facebook</a></li>
+	            <li class="rss"><a href="#">Rss</a></li>
+	        </ul>
+	    </div>
+	</footer><!-- footer -->
+	
+	
+	
+	
+</div><!--wrap-->
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<!--border radius-->
+<script>
+	$(function () {
+	  var nua = navigator.userAgent;
+	  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
+	  if (isAndroid) {
+	    $('select.form-control').removeClass('form-control').css('width', '100%');
+	  };
+	});
+</script>
+<!--border radius-->
+<!--ie8 important-->
+<script>
+ var s = document.createElement('div');
+s.innerHTML = "<section></section>";
+document.body.appendChild(s);
+ </script>
+ <script>
+$("body").append("<section></section>");
+ </script>
+ <!--ie8 important-->  
+  </body>
+
+</html>
