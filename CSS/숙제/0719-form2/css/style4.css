@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body > div:first-child {
+	width: 1200px;
+	margin: 0 auto;
+}
+h2 {
+	text-align: center;
+}
+table {
+	border-collapse: collapse;
+	border-style: solid;
+	width: 1200px;
+	margin-bottom: 20px;
+}
+table:first-child {
+	text-align: center;
+	background-color: #000000;
+	margin-top: 10px;
+}
+table:first-child a {
+	color: #ffffff;
+}
+td {
+	line-height: 50px;
+}
+th {
+	background-color: #cecece;
+}
+td:nth-child(1), td:nth-child(3) {
+	text-align: center;
+}
+table:last-child div {
+	width: 250px;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+body input {
+	float: right;
+	border: none;
+	border-bottom: 1px solid #cecece;
+	padding: 5px;
+}
+input[type=button] {
+	background-color: #000000;
+	color: #ffffff;
+}

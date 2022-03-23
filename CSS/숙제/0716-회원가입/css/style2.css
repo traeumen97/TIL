@@ -1,0 +1,12 @@
+
+.inner {
+	width: 900px;
+	margin: 0 auto;
+}
+form > fieldset:first-child {
+	margin-bottom: 20px;
+}
+form > fieldset {
+	width: 900px;
+	padding: 10px;
+}

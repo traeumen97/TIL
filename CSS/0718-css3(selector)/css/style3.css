@@ -1,0 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+@font-face {
+	font-family:'BMDOHYEON';
+	src; url('font/BMDOHYEON.ttf') format('truetype')
+}

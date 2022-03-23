@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+div.inner {
+	width: 900px;
+	margin: 0 auto;
+}
+img.sample {
+	width: 900px;
+	height: 1316px;
+}
