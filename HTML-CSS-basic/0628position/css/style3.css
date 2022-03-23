@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+p:first-child {
+	color: red;
+}
+span:last-child {
+	background-color: yellow;
+}
+body > div:first-child > p:first-child {
+	background-color: green;
+}
+body > div:last-child > p:first-child {
+	font-size: 50px;
+}
+div.group > span:first-child {
+	font-style: italic;
+}

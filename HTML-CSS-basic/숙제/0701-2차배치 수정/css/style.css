@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div {
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+	float: left;
+}
+br {
+	clear: both;
+}
+body > div > div {
+	width: 150px;
+	height: 150px;
+	position: relative;
+}
+body > div > div:first-child {
+	background-color: red;
+}
+div.blue {
+	background-color: blue;
+	left: 150px;
+}
+body > div > div:last-child {
+	background-color: yellow;
+	left: 300px;
+}
+body > div > div > div {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+}
+div.center {
+	background-color: white;
+	top: 50px;
+	left: 50px;
+}
+div.black {
+	background-color: black;
+}
+div.black:last-child {
+	right: 0;
+	bottom: 0;
+}
+div.skyblue {
+	background-color: skyblue;
+}
+div.right {
+	right: 0;
+}
+div.bottom {
+	bottom: 0;
+}
+
+
+
+
+
+
+

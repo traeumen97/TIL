@@ -1,0 +1,28 @@
+h2 {
+	background-color: black;
+	color: white;
+	text-align: center;
+	width: 300px;
+}
+.list {
+	background-color: green;
+	width: 180px;
+	color: white;
+	text-align: center;
+}
+.list1 {
+	font-weight: bold;
+}
+.list2 {
+	font-weight: bold;
+}
+.naverlink {
+	font-style: italic;
+	color: black;
+}
+.text {
+	font-size: 20px;
+}
+li {
+	font-style: italic;
+}

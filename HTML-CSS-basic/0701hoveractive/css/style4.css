@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+p:first-child::after {
+	content: "SALE";
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	background-color: red;
+	color: white;
+	text-align: center;
+}
+p:first-child:hover::after {
+	background-color: black;
+}
+span:first-child::before {
+	content: "할인";
+	display: inline-block;
+	border: 1px solid red;
+	color: red;
+}
+span:last-child:hover::before {
+	border: 1px solid black;
+	color: black;
+}

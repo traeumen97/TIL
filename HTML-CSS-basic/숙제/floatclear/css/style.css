@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div {
+	width: 500px;
+	border: 3px solid gray;
+	float: left;
+	margin: 10px;
+}
+div.red1 {
+	background-color: red;
+	float: left;
+}
+div.blue1 {
+	background-color: blue;
+	float: left;
+	clear: both;
+}
+div.yellow1 {
+	background-color: yellow;
+	float: right;
+}
+div.purple1 {
+	background-color: purple;
+	clear: both;
+}
+div.red1, div.purple1 {
+	width: 500px;
+	height: 100px;
+	float: left;
+}
+div.blue1, div.yellow1 {
+	width: 100px;
+	height: 300px;
+}
+div.green1 {
+	background-color: green;
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+br {
+	clear: both;
+}
+div.red2 {
+	background-color: red;
+	float: left;
+}
+div.blue2 {
+	background-color: blue;
+}
+div.green2 {
+	background-color: green;
+	float: right;
+}
+div.yellow2 {
+	background-color: yellow;
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+div.purple2 {
+	background-color: purple;
+}
+div.red2, div.green2 {
+	width: 100px;
+	height: 500px;
+}
+div.blue2, div.purple2 {
+	width: 300px;
+	height: 100px;
+	float: left;
+}
+div.red3 {
+	background-color: red;
+	float: left;
+}
+div.blue3 {
+	background-color: blue;
+	float: right;
+}
+div.green3 {
+	background-color: green;
+	float: left;
+}
+div.yellow3 {
+	background-color: yellow;
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+div.purple3 {
+	background-color: purple;
+	float: left;
+}
+div.red3, div.purple3 {
+	width: 400px;
+	height: 100px;
+}
+div.green3, div.blue3 {
+	width: 100px;
+	height: 400px;
+}
+div.red4 {
+	background-color: red;
+	float: left;
+}
+div.blue4 {
+	background-color: blue;
+	float: left;
+}
+div.green4 {
+	background-color: green;
+	float: left;
+	width: 300px;
+	height: 300px;
+}
+div.yellow4 {
+	background-color: yellow;
+	float: right;
+}
+div.purple4 {
+	background-color: purple;
+	float: left;
+}
+div.red4, div.yellow4 {
+	width: 100px;
+	height: 400px;
+}
+div.blue4, div.purple4 {
+	width: 400px;
+	height: 100px;
+}
+div.red5 {
+	background-color: red;
+	height: 200px;
+	float: left;
+}
+div.blue5 {
+	background-color: blue;
+	width: 300px;
+	height: 400px;
+	float: right;
+}
+div.green5 {
+	background-color: green;
+	height: 300px;
+	float: left;
+}
+div.yellow5 {
+	background: yellow;
+	float: left;
+}
+div.purple5 {
+	background-color: purple;
+	width: 100px;
+	float: right;
+}
+div.red5, div.green5, div.yellow5 {
+	width: 200px;
+}
+div.yellow5, div.purple5 {
+	height: 100px;
+}
+div.border2 {
+	width: 1000px;
+	border: 3px solid gray;
+	float: left;
+	margin: 10px;
+}
+div.red6 {
+	background-color: red;
+	float: left;
+}
+div.green6 {
+	background-color: green;
+	float: right;
+}
+div.blue6 {
+	background-color: blue;
+	float: right;
+}
+div.yellow6 {
+	background-color: yellow;
+	margin-left: 200px;
+	float: left;
+}
+div.purple6 {
+	background-color: purple;
+	float: left;
+}
+div.orange {
+	background-color: orange;
+	float: right;
+}
+div.pink {
+	background-color: pink;
+	width: 600px;
+	height: 200px;
+	float: left;
+}
+div.skyblue {
+	background-color: skyblue;
+	float: right;
+	clear: both;
+}
+div.red6, div.orange {
+	width: 400px;
+	height: 200px;
+}
+div.green6, div.purple6 {
+	width: 200px;
+	height: 400px;
+}
+div.blue6, div.yellow6, div.skyblue {
+	width: 200px;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

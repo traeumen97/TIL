@@ -1,0 +1,263 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ex {
+    width: 500px;
+    border: solid 3px grey;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+/*------ 컬러 박스 기본 설정 ------*/
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.skyblue {
+    background-color: skyblue;
+}
+
+/*------ float속성 제거하기 위한 속성 ------*/
+br {
+    clear: both;
+}
+
+/*------ 예제 1번 ------*/
+.ex_01 > .red {
+    width: 500px;
+    height: 100px;
+}
+
+.ex_01 > .blue {
+    float: left;
+    width: 100px;
+    height: 300px;
+}
+
+.ex_01 > .green {
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+.ex_01 > .yellow {
+    float: left;
+    width: 100px;
+    height: 300px;
+}
+
+.ex_01 > .purple {
+    width: 500px;
+    height: 100px;
+	clear: both;
+}
+
+/*------ 예제 2번 ------*/
+.ex_02 > .red {
+    float: left;
+    width: 100px;
+    height: 500px;
+}
+
+.ex_02 > .blue {
+    float: left;
+    width: 300px;
+    height: 100px;
+}
+
+.ex_02 > .green {
+    float: right;
+    width: 100px;
+    height: 500px;
+}
+
+.ex_02 > .yellow {
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+.ex_02 > .purple {
+    float: left;
+    width: 300px;
+    height: 100px;
+}
+
+/*------ 예제 3번 ------*/
+.ex_03 > .red {
+    float: left;
+    width: 400px;
+    height: 100px;
+}
+
+.ex_03 > .blue {
+    float: right;
+    width: 100px;
+    height: 400px;
+}
+
+.ex_03 > .green {
+    float: left;
+    width: 100px;
+    height: 400px;
+}
+
+.ex_03 > .yellow {
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+.ex_03 > .purple {
+    float: left;
+    width: 400px;
+    height: 100px;
+}
+
+/*------ 예제 4번 ------*/
+.ex_04 > .red {
+    float: left;
+    width: 100px;
+    height: 400px;
+}
+
+.ex_04 > .blue {
+    float: right;
+    width: 400px;
+    height: 100px;
+}
+
+.ex_04 > .green {
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+.ex_04 > .yellow {
+    float: right;
+    width: 100px;
+    height: 400px;
+}
+
+.ex_04 > .purple {
+    float: left;
+    width: 400px;
+    height: 100px;
+}
+
+/*------ 예제 5번 ------*/
+.ex_05 > .red {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.ex_05 > .blue {
+    float: right;
+    width: 300px;
+    height: 400px;
+}
+
+.ex_05 > .green {
+    float: left;
+    width: 200px;
+    height: 300px;
+}
+
+.ex_05 > .yellow {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.ex_05 > .purple {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+/*------ 예제 6번 ------*/
+.ex_06 {
+    width: 1000px;
+}
+
+.ex_06 > .red {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+
+.ex_06 > .blue {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+.ex_06 > .green {
+    float: right;
+    width: 200px;
+    height: 400px;
+}
+
+.ex_06 > .yellow {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+}
+
+.ex_06 > .purple {
+    float: left;
+    width: 200px;
+    height: 400px;
+}
+
+.ex_06 > .orange {
+    float: right;
+    width: 400px;
+    height: 200px;
+}
+
+.ex_06 > .pink {
+    float: left;
+    width: 600px;
+    height: 200px;
+}
+
+.ex_06 > .skyblue {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+span {
+    font-size: 25px;
+    color: white;
+}

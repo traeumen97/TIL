@@ -1,0 +1,31 @@
+div {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	margin-bottom: 10px;
+	border-width: 5px;
+	border-style: solid;
+}
+div.group1 {
+	border-color: red;
+}
+div.group2 {
+	border-color: blue;
+}
+div.group3 {
+	border-color: yellow;
+}
+p {
+	width: 200px;
+	height: 200px;
+	border: 10px dotted black;
+}
+fieldset {
+	border: none;
+}
+input {
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid red;
+}

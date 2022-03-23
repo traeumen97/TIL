@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+}
+p {
+	background-color: yellow;
+}
+li {
+	background-color: pink;
+}

@@ -1,0 +1,26 @@
+h2  {
+	font-size: 10px;
+}
+h6 {
+	font-size: 30px;
+}
+.text {
+	font-size: 40px;
+}
+p.text {
+	font-weight: bold;
+}
+address {
+	font-style: normal;
+}
+.name {
+	font-style: italic;
+}
+h2.name {
+	font-weight: normal;
+}
+p.text2 {
+	font-style: oblique;
+	font-weight: bold;
+	font-size: 100px;
+}

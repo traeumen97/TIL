@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	margin-bottom: 50px;
+	overflow-X: scroll;
+	overflow-Y: hidden;
+}
+img {
+	width: 1000px;
+	height: auto;
+}

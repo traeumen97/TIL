@@ -1,0 +1,16 @@
+p.text1 {
+	width: 100px;
+	background-color: yellow;
+}
+span {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+}
+div.bg {
+	height: 100px;
+	background-color: pink;
+}
+div.area {
+	background-color: green;
+}

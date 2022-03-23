@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#header {
+	background-color: lightgrey;
+	margin: 0 auto;
+	border-bottom: 1px solid black;
+}
+.logo {
+	float: left;
+}
+.logo > a > img {
+	width: 100px;
+	padding: 50px;
+	
+}
+ul.infoLink > li {
+	text-align: center;
+	background-color: white;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 50px;
+}
+ul.mainmenu > li {
+	width: 60px;
+	height: 30px;
+	background-color: black;
+	text-align: center;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top : 10px;
+}
+ul.mainmenu li:hover {
+	background-color: white;
+	color: black;
+}
+ul.mainmenu > li > a {
+	color: white;
+}
+ul.mainmenu > li > a:hover {
+	color: black;
+}
+ul {
+	text-align: right;
+}
+ul > li:last-child {
+}
+.infolink{
+	clear: block;
+}
+br {
+	clear: both;
+}
+#contentsArea {
+	background-color: grey;
+}
+
+div.box1, div.box2 {
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	border: 1px solid black;
+	float: left;
+}
+div.box {
+	margin: 0 auto;
+}
+div.box3, div.box4, div.box4, div.box5, div.box6 {
+	width: 150px;
+	height: 150px;
+	background-color: lightgrey;
+	border: 1px solid black;
+	float: left;
+	margin-right: 2px;
+}
+div.box3 {
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

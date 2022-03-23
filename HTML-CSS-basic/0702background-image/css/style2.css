@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div:first-child {
+	background-color: black;
+	background-image: url('../img/mario.png'), url('../img/bg.jpg');
+	background-size: 100px, cover;
+	background-position: 50px 50px, left;
+	background-repeat: repeat-x, no-repeat;
+}
+body > div > div {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+}
+body > div:last-child {
+	height: 500px;
+	background: black url('../img/bg.jpg') repeat-x center/300px;
+}

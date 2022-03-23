@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.clear {
+	clear: both;
+}
+
+div.inner {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+div#header {
+	background-color: #dfdfdf;
+	padding: 20px 0 15px 0;
+	border-bottom: 1px solid black;
+}
+
+div#header ul {
+	text-align: right;
+}
+
+div#header div > ul > li {
+	display: inline-block;
+}
+
+#header h1.logo {
+	float: left;
+	margin-top: 5px;
+}
+
+#header h1.logo img {
+	width: 150px;
+	height: auto;
+}
+
+ul.infoLink {
+	margin: 10px 0;
+}
+
+ul.infoLink a {
+	display: block;
+	padding: 5px 10px;
+	background-color: white;
+}
+
+ul.mainMenu a {
+	display: block;
+	padding: 0 25px;
+	line-height: 50px;
+	background-color: black;
+	color: white;
+}
+
+ul.mainMenu li:hover > a {
+	background-color: white;
+	color: black;
+}
+ul.mainMenu li:active > a {
+	color: red;
+}
+
+div#contentArea {
+	background-color: #949494;
+}
+
+div#contentArea div.wrap:first-child {
+	border-bottom: 1px solid black;
+}
+
+div#contentArea div.wrap {
+	padding: 50px 0;
+}
+
+div#contentArea  div.wrap > div > a {
+	display: block;
+	border: 1px solid black;
+}
+
+div.wrap > div {
+	float: left;
+}
+
+div.bigCont > a {
+	width: 598px;
+	height: 500px;
+	background-color: white;
+}
+
+div.midCont > a {
+	width: 298px;
+	height: 500px;
+	background-color: #dfdfdf;
+}
+
+div.content > div {
+	margin: 5px;
+}
+
+div.leftCont > a {
+	width: 588px;
+	height: 400px;
+	background-color: #dfdfdf;
+}
+
+div.wrap > div.rightCont {
+	float: right;
+}
+
+div.rightCont > a {
+	width: 588px;
+	height: 400px;
+	background-color: #dfdfdf;
+	float: right;
+}
+
+div.longCont > a {
+	width: 588px;
+	height: 194px;
+	background-color: white;
+}
+
+div.cont > a {
+	width: 288px;
+	height: 400px;
+	background-color: white;
+}
+
+div.smallCont > a {
+	width: 288px;
+	height: 194px;
+	background-color: #636363;
+}
+
+div#footer {
+	background-color: black;
+}
+
+div#footer > div.inner > div {
+	border-bottom: 1px solid grey;
+	padding: 30px 0;
+}
+
+div.guide li {
+	display: inline-block;
+}
+
+div.guide li > a {
+	display: block;
+	padding: 10px;
+	background-color: white;
+}
+
+div.footInfo h1.logo {
+	float: left;
+}
+
+div.footInfo > h1.logo img {
+	width: 100px;
+	height: auto;
+}
+
+div.address {
+	margin: 20px 0 0 140px;
+}
+
+address span {
+	color: white;
+}
+
+p.copyright {
+	padding: 20px 0 50px 0;
+	color: white;
+}
+
+

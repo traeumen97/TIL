@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div {
+	height: 580px;
+	background-color: grey;
+}
+div.topblackbox {
+	height: 80px;
+	background-color: black;
+}
+div.topblackbox, div.box2 {
+	padding-top: 30px;
+}
+body > div > div > div, div.box2 {
+	width: 600px;
+	margin: 0 auto;
+}
+div.whitebox {
+	width: 100px;
+	height: 50px;
+	border: 3px solid white;  
+	float: left;
+}
+div.greybox1, div.greybox2 {
+	width: 600px;
+	height: 25px;
+	background-color: grey;
+}
+div.greybox2 {
+	margin-top: 3px;
+}
+div.box {
+	width: 200px;
+	height: 100px;
+	position: relative;
+}
+div.redbox {
+	background-color: red;
+	float: left;
+}
+div.orangebox {
+	background-color: orange;
+	float: left;
+}
+div.yellowbox {
+	background-color: yellow;
+	float: right;
+}
+div.lightgreenbox {
+	background-color: #adff2f;
+	float: right;
+}
+div.greenbox {
+	background-color: green;
+	float: right;
+}
+div.skybluebox {
+	background-color: skyblue;
+	float: left;
+	clear: both;
+}
+div.bluebox {
+	background-color: blue;
+	float: left;
+}
+div.indigobox {
+	background-color: #000080;
+	clear: both;
+	float: left;
+}
+div.purplebox {
+	background-color: purple;
+	float: right;
+}
+div.blackbox {
+	width: 100px;
+	height: 50px;
+	background-color: black;
+	position: absolute;
+}
+div.rightbottom {
+	right: 0;
+	bottom: 0;
+}
+div.topright {
+	top: 0;
+	right: 0;
+}
+div.leftbottom {
+	left: 0;
+	bottom: 0;
+}

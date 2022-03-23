@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	display: block;
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	text-align: center;
+	text-decoration: none;
+}
+a span {
+	color: white;
+	line-height: 200px;
+}
+ol, ol > li {
+	display: inline;
+}
+ul li {
+	display: inline-block;
+}
+ul .listGroup1 li {
+	width: 50px;
+	height: 40px;
+	background-color: yellow;
+	text-align: center;
+	line-height: 40px;
+}
+div span {
+	display: none;
+}
+ul .listGroup2 li {
+	padding: 10px 20px;
+	background-color: pink;
+}
+div {
+	display: inline;
+	background-color: green;
+	color: yellow;
+	

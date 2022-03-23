@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div.group {
+	background-color: yellow;
+}
+div.box {
+	width: 100px;
+	height: 100px;
+	border: 5px solid black;
+	float: left;
+}
+br {
+	clear: both;
+}
+div.box {
+	width: 800px;
+	border: 5px solid black;
+	margin: 0 auto;
+}
+div.box1 {
+	width: 200px;
+	height: 400px;
+	background-color: red;
+	float: left;
+}
+div.box2 {
+	width: 400px;
+	height: 200px;
+	background-color: blue;
+	float: left;
+}
+div.box3 {
+	width: 200px;
+	height: 400px;
+	background-color: green;
+	float: right;
+}
+div.box4 {
+	width: 400px;
+	height: 200px;
+	background-color: pink;
+	float: left;
+}
