@@ -101,7 +101,9 @@ header h1 {
   grid-column: 3 / 4;
   grid-row: 3 / 4;
 }
-
+.java .list-wrap ul li a {
+  display: block;
+}
 footer .copyright {
   text-align: center;
   font-size: 0.8rem;
