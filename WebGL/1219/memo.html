@@ -1,0 +1,186 @@
+<!-- svg는 xml이기 때문에 빈 요소로 사용할때에는 반드시 종료 슬레시를 넣어야한다. 
+
+1.
+<rect fill="red" />
+		
+		^
+
+2.
+rect {
+	fill: red;
+}
+!css가 html 지정속성 이김!
+		
+		^ - 적용 우선순위
+3.
+<rect style="fill:red;" />
+html에 style 속성 사용 x
+
+모든 도형에 사용할수있는 속성들(path도 사용가능)
+
+- fill. fill-opacity
+- stroke, stroke-width, stroke-opacity
+
+fill, stroke 따로 줄거 아니며 그냥 css opacity 사용
+ex) -opacity: 0.5;
+
+
+-->
+
+
+<!-- 
+
+rx 지정 시 ry는 임의로 변경 전까지는 자동으로 따라옴
+
+
+circle은 정 원만 가능
+가로세롤 동일
+필수속성 = r 
+반지름속성가짐
+좌표기준은 center x /y = 중심점이 좌표기준이 됨
+
+
+
+ellipse는 타원형
+
+
+
+line은 직선만 가능
+
+
+polygon / polyline = 다각형
+공통점 : 3개 이상의 변으로 이루어져있어야함
+		직선만 가능
+차이점 : polygon = 닫힌path
+		polyline = 열린path
+
+rect랑 polygon4각형 	- rect는 각도가 90도인 사각형만 가능
+
+입력방식=
+<polygon points="100,100 200,200 300,300" /> 
+- xy는 콤마 사이는 띄어쓰기 = path하면서 이 방식 사용
+<polygon points="100 100, 200 200, 300 300" />
+- xy는 띄어쓰기 사이는 콤마
+
+면 없애는 방법
+fill: none;
+fill: transparent;
+
+작업 시 polyline 으로 작업하다가 polygon으로 변환
+
+
+
+2019.12.20
+
+
+
+
+path
+
+M = 새로운 path의 시작점
+L = 단순한 직선 표현
+Z = 닫힘패스로 만들어짐 시작점으로 붙어서 패스 닫힘
+
+M, Z 를 제외한 나머지 명령어는 소문자와 대문자 명령어의 값이 달라짐
+- 대문자는 절대좌표 100,100 200,200
+- 소문자는 상대좌표 100,100 100,100
+
+H , V 직각만 표현가능 rect가 더 사용하기 편함
+잘 사용은 하지 않지만 알아둬야함
+
+같이사용되는 명령어 (C/S)
+C = 가장 기본적인 곡선 핸들러 위치의 좌표를 잡아줘야함
+	핸들러 1, 핸들러2 앵커포인트 (M x1,y1 x2,y2 x,y)
+S = 독립적으로 사용할수없음. C에서 연장되게 사용
+
+같이사용되는 명령어 (Q/T)
+Q = 정확한 수치를 빼낼 수 없어서 눈대중으로 작업해야하기 때문에 잘 사용하지않음
+	기본적인 수치값은 항상 남겨둬야함.
+	간단한 눈대중으로 테스트하느 경우 아니면 실무에서는 거의 사용하지않음
+T = 
+
+
+
+
+ie에서 svg element 넘치면 overflow: hidden; 처리
+하위 브라우저에 해당
+
+edit-orefernce fuides, grid&slices
+grid every 50 pixel subdivisions 5
+
+0,0,0
+0=반시계방향
+1=시계방향
+
+0 작게돌리기
+1 크게돌리기
+
+ -->
+
+
+ <!-- 
+
+ 2019.12.26
+
+
+제이쿼리객체.이벤트(이벤트핸들러); - jquery1버젼
+제이쿼리객체.on('이벤트',이벤트핸들러); - 권장 작성방식 3버전에서는 이렇게 작성.
+
+vivus plugin은 라인드로윙전용 플러그인이기때문에 fill을 해도 나타나지않음
+vivus로 드로잉 후 콜백함수로 채울 수 있음
+
+제이쿼리코어 파일이없으면 걔가시킨대로해도 작동디지않는다.
+자바스크립트는 제이쿼리 코어 파일이 없어도 순수 자바스크립트로만 사용할수있는 플러그인이다.
+
+vivus는 자바스크립트 플러그인.
+
+플러그인마다 svg에 붙히는 플러그인이 있고 path에 붙히는 플러그인이 있음.
+
+vivus 스크립트 안에는 id값값에 싱크 못시킴 클래스X
+
+duraqtion:200, file: 'link/to/my.svg'- file 값 꽂아주는것은 느림.
+
+
+압축풀면 dist나 best 폴더안에 js 파일 있음(min.js)
+
+렌더링속도때문에 실무에서는 body 안에 스크립트 삽입.
+wc3에서는 파일 확인하기위해서 head 안에 삽입하는걸 권장.
+
+(헤드슬라이더나 그런 js는 헤드안에
+버튼 크릭이나 당장 렌더링 필요없는 js는 body 안에 삽입)
+
+위에다 넣을거면 document ready 작성.
+
+
+vivus option
+
+pathTimingFunction
+animTimingFunction
+type duration 많이 사용.
+
+vivus 사용법 option list 중에 method 있음
+play stop reset 3가지 많이 사용
+
+누구에게 : 브라우저 = $(window)
+무슨일이 생기면 : 스크롤할때 = scroll()
+				 만약에 $(this).scrollTop() > ('#svg1').offset().top
+				 		*-변수 누구를 : vivus('svg1')
+						어떻게할까???? : play()
+				 아니면
+				 		*-변수 누구를 : vivus('svg1')
+				 		어떻게 할까??? : reset()
+
+
+
+
+!다음시간 예습!
+
+function name(a,b,c){
+	실행문;
+}
+
+name(A,B,C);
+
+moffing(?)
+
+  -->

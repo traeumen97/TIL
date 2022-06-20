@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+  Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>HTML</title>
+  <meta name="description" content="">
+  <meta name="author" content="Administrator">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.min.js"></script>
+
+
+<style type="text/css">
+*{margin:0;padding:0;}
+#wrap{width:100px;height:100px;background:#2F98B3;float:left;}
+body{font-family:"Arial Black";font-size:16px;line-height:1.2em;}
+li{list-style:none;}
+#visual{min-width:1000px;height:500px;margin:0 auto;border:2px solid #FF0000;overflow:hidden;}
+#visual ul{width:100%;height:500px;float:left;position:relative;}
+#visual ul li{width:100%;height:500px;position:absolute; text-indent:-999em;}
+#visual .visual_0{top:0;background:url("img/0.png") no-repeat  50% 0;} 
+#visual .visual_1{top:100%;background:url("img/1.png") no-repeat  50% 0;}
+#visual .visual_2{top:200%;background:url("img/2.png") no-repeat  50% 0;}
+
+#btnlist :after{content:"";display:block;clear:both;}
+#btnlist{line-height:3em;text-align:center;}
+#btnlist li{width:100px;margin-right:10px;border:1px solid #0000EE; float:left;
+position:relative; top:10px; left:50%;} 
+#btnlist li.on{background:#2F98B3;}
+#btnlist li a{width:100px;height:3em;display:block;}
+
+</style>
+ </head>
+
+ <body>
+  <div id="wrap"> stopbutton</div>
+   <div id="visual">
+    <ul>
+     <li class="visual_0"><a href="#">sliderimg0</a></li>
+     <li class="visual_1"><a href="#">sliderimg1</a></li>
+     <li class="visual_2"><a href="#">sliderimg2</a></li>
+    </ul>
+   </div>
+    <ul id="btnlist">
+     <li class="on"><a href="#">01</a></li>
+     <li><a href="#">02</a></li>
+     <li><a href="#">03</a></li>
+    </ul>   
+
+ <script>
+  $(function(){
+   var visual = $('#visual > ul > li');
+   var button =$('#btnlist > li');
+   var current =0;
+   var setIntervalId;
+   
+   button.on({
+    click:function(){
+      var tg = $(this);
+      var i =tg.index();
+     
+     button.removeClass('on');
+      tg.addClass('on');
+    
+        move(i);
+    }       
+   });
+  
+    $('#wrap').on({
+        mouseover:function(){
+            clearInterval(setIntervalId);
+        },
+        mouseout:function(){
+            timer();
+        }
+    });
+  
+  timer();
+  function timer(){
+   setIntervalId = setInterval(function(){
+      var n = current +1;
+       if(n== visual.size()){
+         n = 0; 
+       }
+       button.eq(n).trigger('click');
+   },5000);      
+  }
+  
+  function move(i){
+   if(current == i) return;
+   var currentEl = visual.eq(current);
+   var nextEl = visual.eq(i);
+   
+   currentEl.css({top:0}).stop().animate({top:'-100%'});
+   nextEl .css({top:'100%'}).stop().animate({top:0});
+   current = i;
+  }
+ 
+  });//end
+ </script>
+ </body>
+</html>

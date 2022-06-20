@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body > div {
+	width: 1600px;
+	margin: 0 auto 0 auto;
+}
+body > div > div {
+	width: 400px;
+	height: 400px;
+	float: left;
+}
+body > div > div {
+	position: relative;
+}
+body > div > div:first-child {
+	background-image: -webkit-linear-gradient(0deg, #93DAFF, #87CEFA, #00BFFF, #00A5FF, #1EA4FF, #1E90FF);
+	background-image: -moz-linear-gradient(0deg, #93DAFF, #87CEFA, #00BFFF, #00A5FF, #1EA4FF, #1E90FF);
+	background-image: -ms-linear-gradient(0deg, #93DAFF, #87CEFA, #00BFFF, #00A5FF, #1EA4FF, #1E90FF);
+	background-image: -o-linear-gradient(0deg, #93DAFF, #87CEFA, #00BFFF, #00A5FF, #1EA4FF, #1E90FF);
+	background-image: linear-gradient(0deg, #93DAFF, #87CEFA, #00BFFF, #00A5FF, #1EA4FF, #1E90FF);
+}
+body > div > div:nth-child(2) {
+	background-image: -webkit-linear-gradient(45deg, #E8F5FF, #C8D7FF, #AAB9FF, #6E6EFF, #6A5ACD, #3C3C8C);
+	background-image: -moz-linear-gradient(45deg, #E8F5FF, #C8D7FF, #AAB9FF, #6E6EFF, #6A5ACD, #3C3C8C);
+	background-image: -ms-linear-gradient(45deg, #E8F5FF, #C8D7FF, #AAB9FF, #6E6EFF, #6A5ACD, #3C3C8C);
+	background-image: -o-linear-gradient(45deg, #E8F5FF, #C8D7FF, #AAB9FF, #6E6EFF, #6A5ACD, #3C3C8C);
+	background-image: linear-gradient(45deg, #E8F5FF, #C8D7FF, #AAB9FF, #6E6EFF, #6A5ACD, #3C3C8C);
+}
+body > div > div:nth-child(3) {
+	background-image: -webkit-linear-gradient(90deg, #ffcfe4, #fe9fc9, #fe6fad, #fd0f77, #c70258, #85013b);
+	background-image: -moz-linear-gradient(90deg, #ffcfe4, #fe9fc9, #fe6fad, #fd0f77, #c70258, #85013b);
+	background-image: -ms-linear-gradient(90deg, #ffcfe4, #fe9fc9, #fe6fad, #fd0f77, #c70258, #85013b);
+	background-image: -o-linear-gradient(90deg, #ffcfe4, #fe9fc9, #fe6fad, #fd0f77, #c70258, #85013b);
+	background-image: linear-gradient(90deg, #ffcfe4, #fe9fc9, #fe6fad, #fd0f77, #c70258, #85013b);
+}
+body > div > div:nth-child(4) {
+	background-image: -webkit-linear-gradient(135deg, #e1caf1, #c395e3, #a560d5, #61258a, #491c68, #301345);
+	background-image: -moz-linear-gradient(135deg, #e1caf1, #c395e3, #a560d5, #61258a, #491c68, #301345);
+	background-image: -ms-linear-gradient(135deg, #e1caf1, #c395e3, #a560d5, #61258a, #491c68, #301345);
+	background-image: -o-linear-gradient(135deg, #e1caf1, #c395e3, #a560d5, #61258a, #491c68, #301345);
+	background-image: linear-gradient(135deg, #e1caf1, #c395e3, #a560d5, #61258a, #491c68, #301345);
+}
+body > div > div:nth-child(5) {
+	background-image: -webkit-linear-gradient(180deg, #f3f5f7, #e5eaf0, #d9e0e8, #c0cbd9, #7f97b3, #4c6480);
+	background-image: -moz-linear-gradient(180deg, #f3f5f7, #e5eaf0, #d9e0e8, #c0cbd9, #7f97b3, #4c6480);
+	background-image: -ms-linear-gradient(180deg, #f3f5f7, #e5eaf0, #d9e0e8, #c0cbd9, #7f97b3, #4c6480);
+	background-image: -o-linear-gradient(180deg, #f3f5f7, #e5eaf0, #d9e0e8, #c0cbd9, #7f97b3, #4c6480);
+	background-image: linear-gradient(180deg, #f3f5f7, #e5eaf0, #d9e0e8, #c0cbd9, #7f97b3, #4c6480);
+}
+body > div > div:nth-child(6) {
+	background-image: -webkit-linear-gradient(225deg, #f7c59d, #fe9373, #f15656, #ca3045, #a92242, #491039);
+	background-image: -moz-linear-gradient(225deg, #f7c59d, #fe9373, #f15656, #ca3045, #a92242, #491039);
+	background-image: -ms-linear-gradient(225deg, #f7c59d, #fe9373, #f15656, #ca3045, #a92242, #491039);
+	background-image: -o-linear-gradient(225deg, #f7c59d, #fe9373, #f15656, #ca3045, #a92242, #491039);
+	background-image: linear-gradient(225deg, #f7c59d, #fe9373, #f15656, #ca3045, #a92242, #491039);
+}
+body > div > div:nth-child(7) {
+	background-image: -webkit-linear-gradient(270deg, #f9d063, #f9ad63, #f98a63, #f98a63, #f96363, #e33939);
+	background-image: -moz-linear-gradient(270deg, #f9d063, #f9ad63, #f98a63, #f98a63, #f96363, #e33939);
+	background-image: -ms-linear-gradient(270deg, #f9d063, #f9ad63, #f98a63, #f98a63, #f96363, #e33939);
+	background-image: -o-linear-gradient(270deg, #f9d063, #f9ad63, #f98a63, #f98a63, #f96363, #e33939);
+	background-image: linear-gradient(270deg, #f9d063, #f9ad63, #f98a63, #f98a63, #f96363, #e33939);
+}
+body > div > div:nth-child(8) {
+	background-image: -webkit-linear-gradient(315deg, #f9ee00, #b6f900, #69f900, #00f91d, #00f9b0, #00f9d3);
+	background-image: -moz-linear-gradient(315deg, #f9ee00, #b6f900, #69f900, #00f91d, #00f9b0, #00f9d3);
+	background-image: -ms-linear-gradient(315deg, #f9ee00, #b6f900, #69f900, #00f91d, #00f9b0, #00f9d3);
+	background-image: -o-linear-gradient(315deg, #f9ee00, #b6f900, #69f900, #00f91d, #00f9b0, #00f9d3);
+	background-image: linear-gradient(315deg, #f9ee00, #b6f900, #69f900, #00f91d, #00f9b0, #00f9d3);
+}
+body > div > div > div {
+	width: 314px;
+	height: 54px;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	margin-left: 40px;
+}
+body > div > div > div > div {
+	width: 50px;
+	height: 50px;
+	margin: 2px 1px 2px 1px;
+	display: block;
+	float: left;
+}
+body > div > div:first-child > div > div:first-child {
+	background-color: #1E90FF;
+	margin-left: 2px;
+}
+body > div > div:first-child > div > div:nth-child(2) {
+	background-color: #1EA4FF;
+}
+body > div > div:first-child > div > div:nth-child(3) {
+	background-color: #00A5FF;
+}
+body > div > div:first-child > div > div:nth-child(4) {
+	background-color: #00BFFF;
+}
+body > div > div:first-child > div > div:nth-child(5) {
+	background-color: #87CEFA;
+}
+body > div > div:first-child > div > div:nth-child(6) {
+	background-color: #93DAFF;
+}
+body > div > div:nth-child(2) > div > div:first-child {
+	background-color: #3c3c8c;
+}
+body > div > div:nth-child(2) > div > div:nth-child(2) {
+	background-color: #6A5ACD;
+}
+body > div > div:nth-child(2) > div > div:nth-child(3) {
+	background-color: #6e6eff;
+}
+body > div > div:nth-child(2) > div > div:nth-child(4) {
+	background-color: #aab9ff;
+}
+body > div > div:nth-child(2) > div > div:nth-child(5) {
+	background-color: #c8d7ff;
+}
+body > div > div:nth-child(2) > div > div:nth-child(6) {
+	background-color: #e8f5ff;
+}
+body > div > div:nth-child(3) > div > div:first-child {
+	background-color: #85013b;
+}
+body > div > div:nth-child(3) > div > div:nth-child(2) {
+	background-color: #c70258;
+}
+body > div > div:nth-child(3) > div > div:nth-child(3) {
+	background-color: #fd0f77;
+}
+body > div > div:nth-child(3) > div > div:nth-child(4) {
+	background-color: #fe6fad;
+}
+body > div > div:nth-child(3) > div > div:nth-child(5) {
+	background-color: #fe9fc9;
+}
+body > div > div:nth-child(3) > div > div:nth-child(6) {
+	background-color: #ffcfe4;
+}
+body > div > div:nth-child(4) > div > div:first-child {
+	background-color: #301345;
+}
+body > div > div:nth-child(4) > div > div:nth-child(2) {
+	background-color: #491c68;
+}
+body > div > div:nth-child(4) > div > div:nth-child(3) {
+	background-color: #61258a;
+}
+body > div > div:nth-child(4) > div > div:nth-child(4) {
+	background-color: #a560d5;
+}
+body > div > div:nth-child(4) > div > div:nth-child(5) {
+	background-color: #c395e3;
+}
+body > div > div:nth-child(4) > div > div:nth-child(6) {
+	background-color: #e1caf1;
+}
+body > div > div:nth-child(5) > div > div:first-child {
+	background-color: #4c6480;
+}
+body > div > div:nth-child(5) > div > div:nth-child(2) {
+	background-color: #7f97b3;
+}
+body > div > div:nth-child(5) > div > div:nth-child(3) {
+	background-color: #c0cbd9;
+}
+body > div > div:nth-child(5) > div > div:nth-child(4) {
+	background-color: #d9e0e8;
+}
+body > div > div:nth-child(5) > div > div:nth-child(5) {
+	background-color: #e5eaf0;
+}
+body > div > div:nth-child(5) > div > div:nth-child(6) {
+	background-color: #f3f5f7;
+}
+body > div > div:nth-child(6) > div > div:first-child {
+	background-color: #491039;
+}
+body > div > div:nth-child(6) > div > div:nth-child(2) {
+	background-color: #a92242;
+}
+body > div > div:nth-child(6) > div > div:nth-child(3) {
+	background-color: #ca3045;
+}
+body > div > div:nth-child(6) > div > div:nth-child(4) {
+	background-color: #f15656;
+}
+body > div > div:nth-child(6) > div > div:nth-child(5) {
+	background-color: #fe9373;
+}
+body > div > div:nth-child(6) > div > div:nth-child(6) {
+	background-color: #f7c59d;
+}
+body > div > div:nth-child(7) > div > div:first-child {
+	background-color: #e33939;
+}
+body > div > div:nth-child(7) > div > div:nth-child(2) {
+	background-color: #f96363;
+}
+body > div > div:nth-child(7) > div > div:nth-child(3) {
+	background-color: #f98a63;
+}
+body > div > div:nth-child(7) > div > div:nth-child(4) {
+	background-color: #f98a63;
+}
+body > div > div:nth-child(7) > div > div:nth-child(5) {
+	background-color: #f9ad63;
+}
+body > div > div:nth-child(7) > div > div:nth-child(6) {
+	background-color: #f9d063;
+}
+body > div > div:nth-child(8) > div > div:first-child {
+	background-color: #00f9d3;
+}
+body > div > div:nth-child(8) > div > div:nth-child(2) {
+	background-color: #00f9b0;
+}
+body > div > div:nth-child(8) > div > div:nth-child(3) {
+	background-color: #00f91d;
+}
+body > div > div:nth-child(8) > div > div:nth-child(4) {
+	background-color: #69f900;
+}
+body > div > div:nth-child(8) > div > div:nth-child(5) {
+	background-color: #b6f900;
+}
+body > div > div:nth-child(8) > div > div:nth-child(6) {
+	background-color: #f9ee00;
+}
+body > div > div:nth-child(9) {
+	background-color: #000000;
+	width: 200px;
+	height: 100px;
+	float: left;
+	clear: both;
+}
+body > div > div:last-child > div:first-child {
+	width: 300px;
+	height: 300px;
+	border-radius: 200px 20px 200px 20px;
+	background-image: radial-gradient(circle closest-side at 20px 20px, );
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

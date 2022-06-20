@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div.box1 {
+	width: 200px;
+	height: 200px;
+	border: 5px solid black;
+	float: left;
+}
+p {
+	background-color: yellow;
+}
+div.box2 {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	clear: both;
+	float: right;
+}

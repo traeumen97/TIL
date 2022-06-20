@@ -1,0 +1,19 @@
+﻿1. 새 html을 연다
+
+2. 스크립트와 css 추가
+<link href="bxslider-all/jquery.bxslider.css" rel="stylesheet"> <-bx폴더 안 css
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <-bx폴더 안 test에 적용되어 있던 스크립트
+<script src="bxslider-all/jquery.bxslider.min.js"></script> <-bx폴더 안 스크립트
+
+3. </body>바로 위에 스크립트 추가
+<script>
+$(document).ready(function(e) {
+	slider = $('.bxslider').bxSlider();
+slider.startAuto();
+});
+</script>
+* slider.startAuto();를 삭제하면 수동으로 이동
+
+4. 만들어둔 ul에 class를 bxslider로 준다
+
+5. css 수정

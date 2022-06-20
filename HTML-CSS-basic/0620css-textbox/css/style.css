@@ -1,0 +1,14 @@
+p.text1 {
+	letter-spacing: -5px;
+	line-height: 50px;
+}
+p.text2 {
+	word-spacing: -20px;
+}
+p {
+	text-indent: 20px;
+	text-align: justify
+}
+p.text3 {
+	text-transform: capitalize;
+}

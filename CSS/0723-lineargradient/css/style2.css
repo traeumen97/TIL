@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+div {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+div:first-child {
+	background-color: #000000;
+	box-sizing: content-box;
+	border: 5px solid #ff0000;
+}
+div:last-child {
+	background-color: rgba(0,0,0,1);
+	box-sizing: border-box;
+	border: 5px solid #ff0000;
+}

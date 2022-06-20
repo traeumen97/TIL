@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body > div:first-child {
+	width: 100px;
+	height: 100px;
+	background-color: #000000;
+	-webkit-animation-name: ex;
+	-moz-animation-name: ex;
+	-o-animation-name: ex;
+	animation-name: ex;
+	-webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	-o-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+	-o-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
+}
+@-webkit-keyframes ex {
+	50% {
+		transform: translateX(100px);
+	}
+	to {
+		transform: translate(100px, 100px);
+	}
+}
+@-moz-keyframes ex {
+	50% {
+		transform: translateX(100px);
+	}
+	to {
+		transform: translate(100px, 100px);
+	}
+}
+@-o-keyframes ex {
+	50% {
+		transform: translateX(100px);
+	}
+	to {
+		transform: translate(100px, 100px);
+	}
+}
+@keyframes ex {
+	50% {
+		transform: translateX(100px);
+	}
+	to {
+		transform: translate(100px, 100px);
+	}
+}
+body > div:last-child > div {
+	width: 10px;
+	height: 50px;
+	background-color: #ff0000;
+	display: inline-block;
+	-webkit-animation-name: ex2;
+	-moz-animation-name: ex2;
+	-o-animation-name: ex2;
+	animation-name: ex2;
+	-webkit-animation-duration: 0.6s;
+	-moz-animation-duration: 0.6s;
+	-o-animation-duration: 0.6s;
+	animation-duration: 0.6s;
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+	-o-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+body > div:last-child > div:first-child {
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+	-o-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+body > div:last-child > div:last-child {
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+	-o-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+body > div:last-child {
+	margin: 50px;
+}
+@-webkit-keyframes ex2 {
+	to {
+		-webkit-transform: scaleY(0.5);
+		-ms-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+	}
+}
+@-moz-keyframes ex2 {
+	to {
+		-webkit-transform: scaleY(0.5);
+		-ms-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+	}
+}
+@-o-keyframes ex2 {
+	to {
+		-webkit-transform: scaleY(0.5);
+		-ms-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+	}
+}
+@keyframes ex2 {
+	to {
+		-webkit-transform: scaleY(0.5);
+		-ms-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+	}
+}

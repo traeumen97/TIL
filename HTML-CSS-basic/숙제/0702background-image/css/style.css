@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div > div.예제1 {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	margin-right: 10px;
+	display: inline-block;
+	background-image: url('../img/star.png'), url('../img/space.jpg');
+	background-size: 40px, cover;
+}
+div.star2 {
+	background-repeat: repeat-x, no-repeat;
+	background-position: left;
+}
+div.star3 {
+	background-repeat: repeat-y, no-repeat;
+	background-position: bottom;
+}
+body > div > div.예제1:last-child {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+div.예제2 {
+	background-color: white;
+	height: 200px;
+	background-image: url('../img/line.png');
+	background-size: 200px, cover;
+}
+div.fixed {
+	background-color: pink;
+	background-image: url(../img/fixed.jpg);
+	background-attachment: fixed;
+}
+p {
+	font-size: 50px;
+	color: white;
+	text-align: right;
+	padding: 100px;
+}
+div.예제3 {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	background-image: url('../img/background_02');
+	background-size: 40px, cover;
+}
+body > div.예제3 {
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	background-image: url('../img/background_02.jpg');
+	background-size: auto;
+	background-position: center;
+	position: relative;
+}
+div.예제3 > div {
+	width: 350px;
+	height: 350px;
+	border: 2px solid white;
+	position: absolute;
+	left: 23px;
+	top: 23px;
+}
+span {
+	content: "";
+	display: inline-block;
+	width: 150px;
+	height: 20px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+}
+span:hover {
+	background-color: black;
+	color: white;
+}
+h6 {
+	text-align: center;
+	line-height: 300px;
+	color: white;
+	font-size: 50px;
+	font-weight: normal;
+}
+div.예제5 > div {
+	width: 400px;
+	height: 600px;
+	background-color: skyblue;
+	background-image: url('../img/logo.png'), url('../img/mian_img-03'), url('../img/main_img-02'), url('../img/main_img01');
+	background-repeat: no-repeat;
+}

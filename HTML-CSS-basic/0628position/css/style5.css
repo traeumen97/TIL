@@ -1,0 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div {
+	width: 350px;
+	height: 350px;
+	border: 3px solid black;
+}

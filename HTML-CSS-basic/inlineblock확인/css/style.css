@@ -1,0 +1,48 @@
+h1, h2, h3, h4, h5, h6 {
+	background-color: yellow;
+}
+p {
+	background-color: green;
+}
+address {
+	background-color: red;
+}
+a {
+	background-color: black;
+}
+img {
+	background-color: yellow;
+}
+ul > li {
+	background-color: green;
+}
+ol > li {
+	background-color: yellow;
+}
+dt {
+	background-color: skyblue;
+}
+dd {
+	background-color: brown;
+}
+caption {
+	background-color: pink;
+}
+th {
+	background-color: orange;
+}
+td {
+	background-color: indigo;
+}
+span {
+	background-color: purple;
+}
+legend {
+	background-color: red;
+}
+label {
+	background-color: yellow;
+}
+input {
+	background-color: pink;
+}

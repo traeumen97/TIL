@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+p {
+	font-family: 'Anton', sans-serif;
+	color: #ffffff;
+	font-size: 100px;
+	display: block;
+	float: left;
+	margin: 15px;
+	text-shadow: 5px 5px 10px #2e2e2e;
+}
+body > div {
+	background-color: #595384;
+	height: 800px;
+	padding-top: 50px;
+}
+body > div> div {
+	width: 720px;
+	margin: 0 auto;
+}
+body > div:hover > div:first-child > div:first-child > p {
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+body > div:hover > div:first-child > div:nth-child(2) > p {
+	-webkit-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+body > div:hover > div:first-child > div:nth-child(3) > p {
+	-webkit-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+body > div:hover > div:first-child > div:nth-child(4) > p {
+	-webkit-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+body > div:hover > div:first-child > div:nth-child(5) > p {
+	-webkit-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+body > div:hover > div:first-child > div:nth-child(6) > p {
+	-webkit-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+body > div:hover > div:first-child > div:nth-child(7) > p {
+	-webkit-transform: rotate(40deg);
+	-ms-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+body > div:hover > div:first-child > div:nth-child(8) > p {
+	-webkit-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+body > div:hover > div:first-child > div:nth-child(9) > p {
+	-webkit-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	transform: rotate(10deg);
+	float: clear;
+}
+body > div > div:nth-child(2):hover > div:first-child {
+	transform: scale(1.5, 1.5)
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="inner">
+			<form>
+				<fieldset>
+					<legend><p>아이디 찾기</p></legend>
+					<p class="margin">아이디 찾는 방법을 선택해주세요.</p>
+					<hr/>
+					<input type="radio" name="인증방법" value="회원정보에 등록한 휴대전화로 인증"/>
+					<label>회원정보에 등록한 휴대전화로 인증</label>
+					<p class="margin">회원정보에 등록한 휴대전화 번호와 입력한 휴대전화 번호가 같아야, 인증번호를 받을 수 있습니다.</p>
+					<label>이름 : </label>
+					<input type="text"/>
+					<label>휴대전화 : </label>
+					<select>
+						<optgroup label="+82">
+							<option value="+82">+82</option>
+						</optgroup>
+					</select>
+					<input type="text"/>
+					<input type="submit" value="인증번호받기"/>
+					<input type="text"/>
+					<hr/>
+					<input type="radio" name="인증방법" value="본인확인 메일로 인증"/>
+					<label>본인확인 메일로 인증</label>
+					<p>본인확인 이메일 주소와 입력한 이메일 주소가 같아야, 인증번호를 받을 수 있습니다.</p>
+					<label>이름 :</label>
+					<input type="text"/><br/>
+					<label>이메일 :</label>
+					<input type="text"/>
+					<input type="submit" value="인증번호받기"/>
+					<input type="text"/>
+				</fieldset>
+				<fieldset>
+					<form>
+						<p class="margin">등록한 회원정보로 찾기 어려우시면, 본인 확인 후 아이디를 찾아드립니다.</p>
+						<input type="radio" name="본인확인 인증방법" value="본인 명의 휴대전화로 인증"/>
+						<label>본인 명의 휴대전화로 인증</label>
+						<hr/>
+						<input type="radio" name="본인확인 인증방법" value="아아핀 인증"/>
+						<label>아이핀 인증</label>
+					</form>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

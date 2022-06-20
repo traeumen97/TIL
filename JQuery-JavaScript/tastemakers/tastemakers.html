@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html  lang="ko">
+
+    <head>
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+	   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  
+          <title>Food Sense ｜ Plant-Based Eating At Its Best</title>
+	   <meta name="description" content="Blueprint: Horizontal Drop-Down Menu" />
+       <meta name="keywords" content="html5" />
+       <meta name="author" content="cocomiz" />
+       <meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+ 
+ <!-- Pulled from http://code.google.com/p/html5shiv/ -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="all">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="tastemakers.css">
+
+<!--basic-js1-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+<!--basic-js2-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ <style>
+@media screen and (max-width:600px) {
+.wrap{width: 320px;}
+
+*{margin:0px; padding:0px;}
+body {font-family: "Georgia", serif; font-size: 12px; color: #333;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none; color: #333;}
+h1, h2, h3, h4, h5, h6 {font-family: "Georgia", serif;}
+
+.hide {display: none;}
+.screen_out {text-indent: -9999px; overflow: hidden; display: block; width: 0; height: 0;}
+.hidetext {position: absolute; top: -9999em;}
+
+.wrap {width: 320px; margin: 10px auto; overflow: hidden;}
+header {width: 320px; float: left; position: relative; padding-top: 50px;}
+h1 {text-indent: -9999em; overflow: hidden; background: url(../img/food-sense.png) no-repeat 100px 0; width: 320px; float: left; height: 120px;}
+nav {width: 320px; float: left; margin-top: 20px; border-bottom: 2px solid #e5e5e5; position: absolute; top: 0; left: 0;}
+nav ul {float: left;}
+nav ul li {padding: 5px; float: left; padding-left: 10px;}
+nav ul li a {font-size: 12px; color: #34AC98;}
+nav ul li a:hover {color: #ee6635;}
+
+.aside1 {clear: both; width: 150px; float: left; margin-right: 20px; margin-top: 30px; display: none;}
+.aside1 h2 {width: 150px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px; margin-bottom: 70px;}
+.aside1 p {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(img/icon-twitter-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside1 p:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.aside2 {width: 150px; margin-top: 30px; float: left; display: none;}
+.aside2 h2 {width: 150px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside2 .bottom_p1 {font-size: 10px; font-style: italic; padding-top: 10px; line-height: 1.7em;}
+.aside2 .bottom_p2 {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(img/icon-facebook-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside2 .bottom_p2:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.mainContents {width: 320px; float: left;}
+.tastemakers {width: 3200px; float: left;}
+.tastemakers header {width: 320px; float: left; border-bottom: 2px solid #e5e5e5;}
+.tastemakers h2 {font-size: 30px; font-weight: 400; padding-left: 60px; background: url(../img/tastemakers.PNG) no-repeat; line-height: 2.2em;}
+.tastemakers_p {font-style: italic; font-size: 10px; margin-bottom: 20px; margin-top: 5px; line-height: 1.5em; margin-bottom: 30px;}
+
+.tastemakers_left {width: 320px; float: left;}
+.tastemakers_left_1 {float: left; width: 318px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_1 img {padding: 5px;}
+.tastemakers_left_1 img:hover {opacity: 0.7;}
+.tastemakers_left_1 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_1 h3 a {color: #34AC98;}
+.tastemakers_left_1 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p {padding: 5px; line-height: 1.2em; margin-bottom: 20px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_2 {float: left; width: 318px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_2 img {padding: 5px;}
+.tastemakers_left_2 img:hover {opacity: 0.7;}
+.tastemakers_left_2 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_2 h3 a {color: #34AC98;}
+.tastemakers_left_2 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p2 {padding: 5px; line-height: 1.2em; margin-bottom: 4px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_3 {float: left; width: 318px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px; margin-right: 13px;}
+.tastemakers_left_3 img {padding: 5px;}
+.tastemakers_left_3 img:hover {opacity: 0.7;}
+.tastemakers_left_3 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_3 h3 a {color: #34AC98;}
+.tastemakers_left_3 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p3 {padding: 5px; line-height: 1.2em; margin-bottom: 78px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_4 {float: right; width: 318px; border: 1px solid #eee; margin-top: 30px; margin-right: 0;}
+.tastemakers_left_4 img {padding: 5px;}
+.tastemakers_left_4 img:hover {opacity: 0.7;}
+.tastemakers_left_4 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_4 h3 a {color: #34AC98;}
+.tastemakers_left_4 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p3 {padding: 5px; line-height: 1.2em; margin-bottom: 78px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_5 {clear: both; float: left; width: 318px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_5 img {padding: 5px;}
+.tastemakers_left_5 img:hover {opacity: 0.7;}
+.tastemakers_left_5 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_5 h3 a {color: #34AC98;}
+.tastemakers_left_5 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p5 {padding: 5px; line-height: 1.2em; margin-bottom: 50px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_6 {float: left; width: 318px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_6 img {padding: 5px;}
+.tastemakers_left_6 img:hover {opacity: 0.7;}
+.tastemakers_left_6 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_6 h3 a {color: #34AC98;}
+.tastemakers_left_6 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p6 {padding: 5px; line-height: 1.2em; margin-bottom: 20px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_7 {float: left; width: 318px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_7 img {padding: 5px;}
+.tastemakers_left_7 img:hover {opacity: 0.7;}
+.tastemakers_left_7 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_7 h3 a {color: #34AC98;}
+.tastemakers_left_7 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p7 {padding: 5px; line-height: 1.2em; margin-bottom: 34px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p7 {float: left; position: absolute; top: 13px; left: 69px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_8 {float: right; width: 318px; border: 1px solid #eee; margin-top: 30px; margin-right: 0;}
+.tastemakers_left_8 img {padding: 5px;}
+.tastemakers_left_8 img:hover {opacity: 0.7;}
+.tastemakers_left_1_img img {width: 308px;}
+.tastemakers_left_8 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_8 h3 a {color: #34AC98;}
+.tastemakers_left_8 h3 a:hover {color: #ee6635;}
+.dotted {width: 308px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p8 {padding: 5px; line-height: 1.2em; margin-bottom: 64px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 290px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+    
+.bottom {clear: both; width: 320px; float: left; border-top: 2px solid #e5e5e5; padding-top: 20px; margin-bottom: 30px; position: relative; margin-top: 40px;}
+.bottom_list {overflow: hidden;}
+.bottom_list li {display: inline; padding: 0 5px; background: url(img/list.jpg) repeat-y; margin-left: -2px;}
+.bottom_list li a {color: #34ac98; font-size: 10px;}
+.bottom_list li a:hover {color: #ee6635;}
+.bottom p {color: #aaa; line-height: 2em; padding-left: 2px; font-size: 10px;}
+
+.bottom_sns {position: absolute; top: 20px; right: 0;}
+.bottom_sns ul {}
+.bottom_sns ul li {display: inline; float: left; padding-left: 5px;}
+.bottom_sns ul li a {display: block; width: 32px; height: 32px; opacity: 0.4; text-indent: -9999em;}
+.bottom_sns ul li a:hover {opacity: 1;}
+
+.bottom_sns .twitter a {background: url(../img/icon-twitter.png) no-repeat -15px 0;}
+.bottom_sns .facebook a {background: url(../img/icon-facebook.png) no-repeat -15px 0;}
+.bottom_sns .rss a {background: url(../img/icon-rss.png) no-repeat -15px 0;}
+}
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+*{margin: 0; padding: 0;}
+body {font-family: "Georgia", serif; font-size: 12px; color: #333;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none; color: #333;}
+h1, h2, h3, h4, h5, h6 {font-family: "Georgia", serif;}
+
+.hide {display: none;}
+.screen_out {text-indent: -9999px; overflow: hidden; display: block; width: 0; height: 0;}
+.hidetext {position: absolute; top: -9999em;}
+
+.wrap {width: 580px; margin: 0 auto;}
+header {width: 580px; float: left;}
+h1 {text-indent: -9999em; overflow: hidden; background: url(../img/food-sense.png) no-repeat left 0; width: 120px; float: left; height: 120px;}
+nav {width: 460px; float: right; margin-top: 40px; margin-bottom: 10px;}
+nav ul {width: 440px; float: right;}
+nav ul li {padding: 20px; padding-top: 50px; float: left; text-align: right;}
+nav ul li a {font-size: 12px; color: #34AC98; font-style: italic;}
+nav ul li:first-child {background: url(../img/nav-tastemakers.png) no-repeat 40px 10px;}
+nav ul li:first-child:hover {background: url(../img/nav-tastemakers.png) no-repeat 45px 10px;}
+nav ul li:nth-child(2) {background: url(../img/nav-blog.png) no-repeat 15px 10px;}
+nav ul li:nth-child(2):hover {background: url(../img/nav-blog.png) no-repeat 25px 10px;}
+nav ul li:nth-child(3) {background: url(../img/nav-alist.png) no-repeat 30px 10px;}
+nav ul li:nth-child(3):hover {background: url(../img/nav-alist.png) no-repeat 35px 10px;}
+nav ul li:nth-child(4) {background: url(../img/nav-contribute.png) no-repeat 30px 10px;}
+nav ul li:nth-child(4):hover {background: url(../img/nav-contribute.png) no-repeat 35px 10px;}
+nav ul li:last-child {background: url(../img/nav-about.png) no-repeat 20px 10px;}
+nav ul li:last-child:hover {background: url(../img/nav-about.png) no-repeat 25px 10px;}
+nav ul li a:hover {color: #ee6635;}
+
+.aside1 {width: 190px; float: left; margin-top: 30px; display: none;}
+.aside1 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px; margin-bottom: 70px;}
+.aside1 p {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(img/icon-twitter-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside1 p:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.aside2 {width: 190px; margin-top: 30px; float: left; display: none;}
+.aside2 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside2 .bottom_p1 {font-size: 10px; font-style: italic; padding-top: 10px; line-height: 1.7em;}
+.aside2 .bottom_p2 {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(../img/icon-facebook-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside2 .bottom_p2:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.mainContents {width: 580px; float: right;}
+
+.tastemakers {width: 580px; float: left; margin-top: 40px;}
+.tastemakers header {width: 580px; float: left; border-bottom: 2px solid #e5e5e5;}
+.tastemakers h2 {font-size: 30px; font-weight: 400; padding-left: 60px; background: url(../img/tastemakers.PNG) no-repeat; line-height: 2.2em;}
+.tastemakers_p {font-style: italic; font-size: 12px; margin-bottom: 20px; margin-top: 5px; line-height: 1.5em; margin-bottom: 30px;}
+
+.tastemakers_left {width: 580px; float: left;}
+.tastemakers_left_1 {float: left; width: 278px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_1_img img {width: 268px;}
+.tastemakers_left_1 img {padding: 5px;}
+.tastemakers_left_1 img:hover {opacity: 0.7;}
+.tastemakers_left_1 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_1 h3 a {color: #34AC98;}
+.tastemakers_left_1 h3 a:hover {color: #ee6635;}
+.dotted {width: 268px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p {padding: 5px; line-height: 1.2em; margin-bottom: 20px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 278px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_2 {float: right; width: 278px; border: 1px solid #eee; margin-top: 30px;}
+.tastemakers_left_2 img {padding: 5px;}
+.tastemakers_left_2 img:hover {opacity: 0.7;}
+.tastemakers_left_2 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_2 h3 a {color: #34AC98;}
+.tastemakers_left_2 h3 a:hover {color: #ee6635;}
+.dotted {width: 268px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p2 {padding: 5px; line-height: 1.2em; margin-bottom: 4px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_3 {float: left; width: 278px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px; margin-right: 13px;}
+.tastemakers_left_3 img {padding: 5px;}
+.tastemakers_left_3 img:hover {opacity: 0.7;}
+.tastemakers_left_3 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_3 h3 a {color: #34AC98;}
+.tastemakers_left_3 h3 a:hover {color: #ee6635;}
+.dotted {width: 268px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p3 {padding: 5px; line-height: 1.2em; margin-bottom: 30px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_4 {float: right; width: 278px; border: 1px solid #eee; margin-top: 30px;}
+.tastemakers_left_4 img {padding: 5px;}
+.tastemakers_left_4 img:hover {opacity: 0.7;}
+.tastemakers_left_4 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_4 h3 a {color: #34AC98;}
+.tastemakers_left_4 h3 a:hover {color: #ee6635;}
+.dotted {width: 268px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p3 {padding: 5px; line-height: 1.2em; margin-bottom: 48px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_5 {clear: both; float: left; width: 278px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_5 img {padding: 5px;}
+.tastemakers_left_5 img:hover {opacity: 0.7;}
+.tastemakers_left_5 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_5 h3 a {color: #34AC98;}
+.tastemakers_left_5 h3 a:hover {color: #ee6635;}
+.dotted {width: 268px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p5 {padding: 5px; line-height: 1.2em; margin-bottom: 34px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_6 {float: right; width: 278px; border: 1px solid #eee; margin-top: 30px;}
+.tastemakers_left_6 img {padding: 5px;}
+.tastemakers_left_6 img:hover {opacity: 0.7;}
+.tastemakers_left_6 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_6 h3 a {color: #34AC98;}
+.tastemakers_left_6 h3 a:hover {color: #ee6635;}
+.dotted {width: 268px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p6 {padding: 5px; line-height: 1.2em; margin-bottom: 20px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_7 {float: left; width: 278px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_7 img {padding: 5px;}
+.tastemakers_left_7 img:hover {opacity: 0.7;}
+.tastemakers_left_7 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_7 h3 a {color: #34AC98;}
+.tastemakers_left_7 h3 a:hover {color: #ee6635;}
+.dotted {width: 268px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p7 {padding: 5px; line-height: 1.2em; margin-bottom: 34px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p7 {float: left; position: absolute; top: 13px; left: 69px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_8 {float: right; width: 278px; border: 1px solid #eee; margin-top: 30px;}
+.tastemakers_left_8 img {padding: 5px;}
+.tastemakers_left_8 img:hover {opacity: 0.7;}
+.tastemakers_left_8 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_8 h3 a {color: #34AC98;}
+.tastemakers_left_8 h3 a:hover {color: #ee6635;}
+.dotted {width: 268px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p8 {padding: 5px; line-height: 1.2em; margin-bottom: 34px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 249px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}    
+    
+.bottom {clear: both; width: 580px; float: left; border-top: 2px solid #e5e5e5; padding-top: 20px; margin-bottom: 30px; position: relative; margin-top: 30px;}
+.bottom_list {overflow: hidden;}
+.bottom_list li {display: inline; padding: 0 5px; background: url(../img/list.jpg) repeat-y; margin-left: -2px;}
+.bottom_list li a {color: #34ac98; font-size: 12px;}
+.bottom_list li a:hover {color: #ee6635;}
+.bottom p {color: #aaa; line-height: 2em; padding-left: 2px;}
+
+.bottom_sns {position: absolute; top: 20px; right: 0;}
+.bottom_sns ul {}
+.bottom_sns ul li {display: inline; float: left; padding-left: 5px;}
+.bottom_sns ul li a {display: block; width: 32px; height: 32px; opacity: 0.4; text-indent: -9999em;}
+.bottom_sns ul li a:hover {opacity: 1;}
+
+.bottom_sns .twitter a {background: url(../img/icon-twitter.png) no-repeat -15px 0;}
+.bottom_sns .facebook a {background: url(../img/icon-facebook.png) no-repeat -15px 0;}
+.bottom_sns .rss a {background: url(../img/icon-rss.png) no-repeat -15px 0;}
+}
+
+@media screen and (min-width:1024px) {
+*{margin:0; padding:0;}
+body {font-family: "Georgia", serif; font-size: 12px; color: #333;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none; color: #333;}
+h1, h2, h3, h4, h5, h6 {font-family: "Georgia", serif;}
+
+.hide {display: none;}
+.screen_out {text-indent: -9999px; overflow: hidden; display: block; width: 0; height: 0;}
+.hidetext {position: absolute; top: -9999em;}
+
+.wrap {width: 950px; margin: 40px auto; overflow: hidden;}
+header {width: 190px; margin-right: 10px; float: left;}
+h1 {width: 120px; height: 121px; float: left; text-indent: -9999em; overflow: hidden; white-space: nowrap; background: url(../img/food-sense.png) no-repeat 0 0;}
+nav {width: 190px; float: left; margin-top: 10px; margin-bottom: 50px;}
+nav ul {width: 190px; float: left;}
+nav ul li {width: 190px; float: left; text-indent: 55px; line-height: 4.2em;}
+nav ul li a {font-size: 15px; color: #34AC98; font-style: italic;}
+nav ul li:first-child {background: url(../img/nav-tastemakers.png) no-repeat 10px 10px;}
+nav ul li:first-child:hover {background: url(../img/nav-tastemakers.png) no-repeat 15px 10px;}
+nav ul li:nth-child(2) {background: url(../img/nav-blog.png) no-repeat 10px 10px;}
+nav ul li:nth-child(2):hover {background: url(../img/nav-blog.png) no-repeat 15px 10px;}
+nav ul li:nth-child(3) {background: url(../img/nav-alist.png) no-repeat 10px 10px;}
+nav ul li:nth-child(3):hover {background: url(../img/nav-alist.png) no-repeat 15px 10px;}
+nav ul li:nth-child(4) {background: url(../img/nav-contribute.png) no-repeat 10px 10px;}
+nav ul li:nth-child(4):hover {background: url(../img/nav-contribute.png) no-repeat 15px 10px;}
+nav ul li:last-child {background: url(../img/nav-about.png) no-repeat 10px 10px;}
+nav ul li:last-child:hover {background: url(../img/nav-about.png) no-repeat 15px 10px;}
+nav ul li a:hover {color: #ee6635;}
+
+.aside1 {width: 190px;}
+.aside1 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside1 p {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(../img/icon-twitter-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside1 p:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.aside2 {width: 190px; margin-top: 30px;}
+.aside2 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside2 .bottom_p1 {font-size: 10px; font-style: italic; padding-top: 10px; line-height: 1.7em;}
+.aside2 .bottom_p2 {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(../img/icon-facebook-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside2 .bottom_p2:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.mainContents {width: 750px; float: right;}
+
+.tastemakers {width: 750px; float: left; margin-top: 40px;}
+.tastemakers header {width: 750px; float: left; border-bottom: 2px solid #e5e5e5;}
+.tastemakers h2 {font-size: 30px; font-weight: 400; padding-left: 60px; background: url(../img/tastemakers.PNG) no-repeat; line-height: 2.2em;}
+.tastemakers_p {font-style: italic; font-size: 14px; margin-bottom: 20px; margin-top: 5px; line-height: 1.5em; margin-bottom: 30px;}
+
+.tastemakers_left {width: 750px; float: left;}
+.tastemakers_left_1 {float: left; width: 170.5px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_1 img {padding: 5px;}
+.tastemakers_left_1 img:hover {opacity: 0.7;}
+.tastemakers_left_1 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_1 h3 a {color: #34AC98;}
+.tastemakers_left_1 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p {padding: 5px; line-height: 1.2em; margin-bottom: 20px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_2 {float: left; width: 170.5px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_2 img {padding: 5px;}
+.tastemakers_left_2 img:hover {opacity: 0.7;}
+.tastemakers_left_2 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_2 h3 a {color: #34AC98;}
+.tastemakers_left_2 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p2 {padding: 5px; line-height: 1.2em; margin-bottom: 4px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_3 {float: left; width: 170.5px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px; margin-right: 13px;}
+.tastemakers_left_3 img {padding: 5px;}
+.tastemakers_left_3 img:hover {opacity: 0.7;}
+.tastemakers_left_3 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_3 h3 a {color: #34AC98;}
+.tastemakers_left_3 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p3 {padding: 5px; line-height: 1.2em; margin-bottom: 78px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_4 {float: right; width: 170.5px; border: 1px solid #eee; margin-top: 30px; margin-right: 0;}
+.tastemakers_left_4 img {padding: 5px;}
+.tastemakers_left_4 img:hover {opacity: 0.7;}
+.tastemakers_left_4 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_4 h3 a {color: #34AC98;}
+.tastemakers_left_4 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p3 {padding: 5px; line-height: 1.2em; margin-bottom: 78px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_5 {clear: both; float: left; width: 170.5px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_5 img {padding: 5px;}
+.tastemakers_left_5 img:hover {opacity: 0.7;}
+.tastemakers_left_5 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_5 h3 a {color: #34AC98;}
+.tastemakers_left_5 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p5 {padding: 5px; line-height: 1.2em; margin-bottom: 50px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_6 {float: left; width: 170.5px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_6 img {padding: 5px;}
+.tastemakers_left_6 img:hover {opacity: 0.7;}
+.tastemakers_left_6 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_6 h3 a {color: #34AC98;}
+.tastemakers_left_6 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p6 {padding: 5px; line-height: 1.2em; margin-bottom: 20px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_7 {float: left; width: 170.5px; border: 1px solid #eee; margin-top: 30px; margin-right: 20px;}
+.tastemakers_left_7 img {padding: 5px;}
+.tastemakers_left_7 img:hover {opacity: 0.7;}
+.tastemakers_left_7 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_7 h3 a {color: #34AC98;}
+.tastemakers_left_7 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p7 {padding: 5px; line-height: 1.2em; margin-bottom: 34px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p7 {float: left; position: absolute; top: 13px; left: 69px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+
+.tastemakers_left_8 {float: right; width: 170.5px; border: 1px solid #eee; margin-top: 30px; margin-right: 0;}
+.tastemakers_left_8 img {padding: 5px;}
+.tastemakers_left_8 img:hover {opacity: 0.7;}
+.tastemakers_left_8 h3 {padding: 5px; line-height: 1.2em; font-size: 14px; font-weight: 400;}
+.tastemakers_left_8 h3 a {color: #34AC98;}
+.tastemakers_left_8 h3 a:hover {color: #ee6635;}
+.dotted {width: 160.5px; border-bottom: 1px dotted #eee; margin: 5px 0 5px 5px;}
+.taste_p8 {padding: 5px; line-height: 1.2em; margin-bottom: 64px;}
+.facebook_like {float: left; position: relative; margin-bottom: 10px;}
+.facebooklike_bg {background: url(../img/flikebg.PNG) no-repeat 0 0; width: 34px; height: 24px; position: absolute; top: 6px; left: 55px;}
+.like_p {float: left; position: absolute; top: 11px; left: 66px;}
+.more {clear: both; font-size: 10px; background: url(../img/tasteicon.PNG) no-repeat 5px 3px; width: 140px; height: 19px; border-top: 1px dotted #eee; padding-top: 10px; padding-left: 30px;}
+.more a {color: #34AC98;}
+.more a:hover {color: #ee6635;}
+    
+.bottom {clear: both; width: 950px; float: left; border-top: 2px solid #e5e5e5; padding-top: 20px; margin-bottom: 30px; position: relative; margin-top: 40px;}
+.bottom_list {overflow: hidden;}
+.bottom_list li {display: inline; padding: 0 5px; background: url(../img/list.jpg) repeat-y; margin-left: -2px;}
+.bottom_list li a {color: #34ac98; font-size: 12px;}
+.bottom_list li a:hover {color: #ee6635;}
+.bottom p {color: #aaa; line-height: 2em; padding-left: 2px;}
+
+.bottom_sns {position: absolute; top: 20px; right: 0;}
+.bottom_sns ul {}
+.bottom_sns ul li {display: inline; float: left; padding-left: 5px;}
+.bottom_sns ul li a {display: block; width: 32px; height: 32px; opacity: 0.4; text-indent: -9999em;}
+.bottom_sns ul li a:hover {opacity: 1;}
+
+.bottom_sns .twitter a {background: url(../img/icon-twitter.png) no-repeat -15px 0;}
+.bottom_sns .facebook a {background: url(../img/icon-facebook.png) no-repeat -15px 0;}
+.bottom_sns .rss a {background: url(../img/icon-rss.png) no-repeat -15px 0;}  
+} 
+ </style>
+
+
+
+</head> 
+
+<body>
+<!--wrap 시작-->	
+<div class="wrap">
+	<header>
+	    <a href="../index.html"><h1>foodsense</h1></a>
+	    <nav>
+	        <h2 class="hidetext">navigation</h2>
+	        <ul>
+	            <li><a href="tastemakers.html">Tastemakers</a></li>
+	            <li><a href="../blog/blog.html">Blog</a></li>
+	            <li><a href="../thealist/thealist.html">The A-List</a></li>
+	            <li><a href="../contribute/contribute.html">Contribute</a></li>
+	            <li><a href="../about/about.html">About</a></li>
+	        </ul>
+	    </nav>
+	</header><!-- header -->
+	
+	<div class="mainContents">
+	<section class="tastemakers">
+    <header>
+	    <h2>Tastemakers</h2>
+	    <p class="tastemakers_p">A curated gallery of home-cooked eye candy - the very best vegetarian and vegan recipes from<br> a community of celebrated food bloggers. If you’re looking for some fresh inspiration, or a new<br> approach to an old favorite, you’ll find a dependably delicious recipe here.</p>
+    </header>
+    </section><!-- about -->
+    
+    <section class="tastemakers_left">
+        <h3 class="hidetext">tastemakers left</h3>
+        <article class="tastemakers_left_1">
+           <div class="tastemakers_left_1_img">
+           <a href="#"><img src="../img/dairy_free_chocolate_icecream_torte_recipe3.jpg" alt="dairy" width="160.5"></a>
+            </div>
+           <h3><a href="#">Dairy Free Chocolate Ice Cream Torte</a></h3>
+           <div class="dotted"></div>
+           <p class="taste_p">Almonds, dates, chocolate, coconut milk, and honey combine to make a perfectly sweet, and sweet for you, dessert.</p>
+           <div class="facebook_like">
+               <a href="#"><img src="../img/flike.PNG" alt="facebooklike"></a>
+               <div class="facebooklike_bg"></div>
+               <p class="like_p">72</p>
+           </div>
+           <p class="more"><a href="#">Becky at the Vintage Mixer →</a></p>
+        </article><!-- tastemakers_left_1 -->
+        
+        <article class="tastemakers_left_2">
+           <div class="tastemakers_left_1_img">
+           <a href="#"><img src="../img/BloodOrangeCake.jpg" alt="dairy" width="160.5"></a>
+            </div>
+           <h3><a href="#">Blood Orange Upside-down Cake with Hazelnuts…</a></h3>
+           <div class="dotted"></div>
+           <p class="taste_p2">Blood oranges combine with hazelnuts, polenta, maple syrup, and olive oil for a heart-healthy treat that tastes like it’s covered in…</p>
+           <div class="facebook_like">
+               <a href="#"><img src="../img/flike.PNG" alt="facebooklike"></a>
+               <div class="facebooklike_bg"></div>
+               <p class="like_p">33</p>
+           </div>
+           <p class="more"><a href="#">Becky at the Vintage Mixer →</a></p>
+        </article><!-- tastemakers_left_2 -->
+        
+        <article class="tastemakers_left_3">
+          <div class="tastemakers_left_1_img">
+           <a href="#"><img src="../img/LentilDahl.jpg" alt="dairy" width="160.5"></a>
+            </div>
+           <h3><a href="#">Simple Lentil Dal</a></h3>
+           <div class="dotted"></div>
+           <p class="taste_p3">A hearty, flavorful, and protein-packed lentil stew.</p>
+           <div class="facebook_like">
+               <a href="#"><img src="../img/flike.PNG" alt="facebooklike"></a>
+               <div class="facebooklike_bg"></div>
+               <p class="like_p">19</p>
+           </div>
+           <p class="more"><a href="#">Becky at the Vintage Mixer →</a></p>
+        </article><!-- tastemakers_left_3 -->
+        
+        <article class="tastemakers_left_4">
+          <div class="tastemakers_left_1_img">
+           <a href="#"><img src="../img/squarefrittata.jpg" alt="dairy" width="160.5"></a>
+            </div>
+           <h3><a href="#">Simple Lentil Dal</a></h3>
+           <div class="dotted"></div>
+           <p class="taste_p3">A hearty, flavorful, and protein-packed lentil stew.</p>
+           <div class="facebook_like">
+               <a href="#"><img src="../img/flike.PNG" alt="facebooklike"></a>
+               <div class="facebooklike_bg"></div>
+               <p class="like_p">22</p>
+           </div>
+           <p class="more"><a href="#">Becky at the Vintage Mixer →</a></p>
+        </article><!-- tastemakers_left_4 -->
+        
+        <article class="tastemakers_left_5">
+          <div class="tastemakers_left_1_img">
+           <a href="#"><img src="../img/margaritasorbet350.jpg" alt="dairy" width="160.5"></a>
+            </div>
+           <h3><a href="#">Margarita sorbet</a></h3>
+           <div class="dotted"></div>
+           <p class="taste_p5">Just in time for Cinco de Mayo—margarita sorbet with sweet and spicy lime-infused sea salt</p>
+           <div class="facebook_like">
+               <a href="#"><img src="../img/flike.PNG" alt="facebooklike"></a>
+               <div class="facebooklike_bg"></div>
+               <p class="like_p">12</p>
+           </div>
+           <p class="more"><a href="#">Becky at the Vintage Mixer →</a></p>
+        </article><!-- tastemakers_left_5 -->
+        
+        <article class="tastemakers_left_6">
+          <div class="tastemakers_left_1_img">
+           <a href="#"><img src="../img/TahiniBroccoli.jpg" alt="dairy" width="160.5"></a>
+            </div>
+           <h3><a href="#">Tahini Broccoli Salad with Cashews</a></h3>
+           <div class="dotted"></div>
+           <p class="taste_p6">Fresh, crisp broccoli tossed with garlic tahini, cashews, and red onions. Comes together in 5 minutes, as a side dish or light lunch.</p>
+           <div class="facebook_like">
+               <a href="#"><img src="../img/flike.PNG" alt="facebooklike"></a>
+               <div class="facebooklike_bg"></div>
+               <p class="like_p">20</p>
+           </div>
+           <p class="more"><a href="#">Becky at the Vintage Mixer →</a></p>
+        </article><!-- tastemakers_left_6 -->
+        
+        <article class="tastemakers_left_7">
+          <div class="tastemakers_left_1_img">
+           <a href="#"><img src="../img/everything_cookies_05.jpg" alt="dairy" width="160.5"></a>
+            </div>
+           <h3><a href="#">Sweet+Nutty Everything Cookies</a></h3>
+           <div class="dotted"></div>
+           <p class="taste_p7">Full of nuts, dried fruits, oats and chocolate chips, these cookies are sublime. Gluten and dairy free.</p>
+           <div class="facebook_like">
+               <a href="#"><img src="../img/flike.PNG" alt="facebooklike"></a>
+               <div class="facebooklike_bg"></div>
+               <p class="like_p7">8</p>
+           </div>
+           <p class="more"><a href="#">Becky at the Vintage Mixer →</a></p>
+        </article><!-- tastemakers_left_7 -->
+        
+        <article class="tastemakers_left_8">
+          <div class="tastemakers_left_1_img">
+           <a href="#"><img src="../img/cranberry_lime_cocktail.jpg" alt="dairy" width="160.5"></a>
+            </div>
+           <h3><a href="#">Cranberry Lime Cocktail</a></h3>
+           <div class="dotted"></div>
+           <p class="taste_p8">An easy, crowd pleasing cocktail, using ingredients you have on hand.</p>
+           <div class="facebook_like">
+               <a href="#"><img src="../img/flike.PNG" alt="facebooklike"></a>
+               <div class="facebooklike_bg"></div>
+               <p class="like_p">10</p>
+           </div>
+           <p class="more"><a href="#">Becky at the Vintage Mixer →</a></p>
+        </article><!-- tastemakers_left_8 -->
+    </section><!-- tastemakers_left -->
+    
+	 </div>   
+	
+	<aside class="aside1">
+	    <h2>LATEST TWEET</h2>
+	    <p>Join the Conversation</p>
+	</aside>
+	
+	<aside class="aside2">
+	    <h2>LET'S BE FRIENDS</h2>
+	    <p class="bottom_p1">For weekly finds, community<br>recommendations, and more,<br> like us on Facebook</p>
+	    <p class="bottom_p2">Join the Community</p>
+	</aside><!-- aside -->
+	
+	<footer class="bottom">
+	    <ul class="bottom_list">
+	        <li><a href="#">Privacy Policy</a></li>
+	        <li><a href="#">Terms of Use</a></li>
+	        <li><a href="#">Contact</a></li>
+	    </ul>
+	    <p>© 2016 Food Sense, all rights reserved.</p>
+	    
+	    <div class="bottom_sns">
+	        <ul>
+	            <li class="twitter"><a href="#">Twitter</a></li>
+	            <li class="facebook"><a href="#">Facebook</a></li>
+	            <li class="rss"><a href="#">Rss</a></li>
+	        </ul>
+	    </div>
+	</footer><!-- footer -->
+	
+	
+	
+	
+</div><!--wrap-->
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<!--border radius-->
+<script>
+	$(function () {
+	  var nua = navigator.userAgent;
+	  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
+	  if (isAndroid) {
+	    $('select.form-control').removeClass('form-control').css('width', '100%');
+	  };
+	});
+</script>
+<!--border radius-->
+<!--ie8 important-->
+<script>
+ var s = document.createElement('div');
+s.innerHTML = "<section></section>";
+document.body.appendChild(s);
+ </script>
+ <script>
+$("body").append("<section></section>");
+ </script>
+ <!--ie8 important-->  
+  </body>
+
+</html>

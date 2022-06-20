@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div > div {
+	width: 300px;
+	height: 300px;
+	border-width: 8px;
+	border-style: solid;
+}
+
+body > div:first-child > div {
+	border-color: red;
+	float: left;
+}
+body > div:last-child > div {
+	border-color: black;
+	position: absolute;
+}
+br {
+	clear: both;
+}
+body > div:last-child {
+	position: relative;
+}
+div.box {
+	left: 310px;
+}
+body > div:last-child > div:last-child {
+	left: 620px;
+}

@@ -1,0 +1,29 @@
+div {
+	width: 200px;
+	height: 200px;
+}
+.html {
+	background-color: blue;
+}
+.css {
+	background-color: black;
+}
+.Hyper {
+	background-color: red;
+}
+.style {
+	background-color: pink;
+}
+p.html2 {
+	color: white;
+	text-align: center
+}
+p.css2 {
+	color: white;
+	text-align: center;
+	line-height: 200px;
+}
+span {
+	background-color: white;
+	color: green;
+}

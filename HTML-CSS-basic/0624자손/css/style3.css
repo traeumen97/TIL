@@ -1,0 +1,9 @@
+ul li {
+	list-style-type: lower-alpha;
+}
+ol li {
+	list-style: none;
+}
+li.list {
+	list-style-position: inside;
+}

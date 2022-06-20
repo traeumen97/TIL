@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.inner {
+	width: 900px;
+	margin: 0 auto;
+}
+form > fieldset:first-child {
+	margin-bottom: 20px;
+}
+form > fieldset > p.margin {
+	margin: 10px;
+}
+form > fieldset {
+	width: 900px;
+}

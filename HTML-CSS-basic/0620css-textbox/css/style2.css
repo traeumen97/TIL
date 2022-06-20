@@ -1,0 +1,16 @@
+h2 {
+	text-decoration: line-through solid black;
+}
+a {
+	text-decoration: none;
+	color: black;
+	background-color: yellow;
+}
+h2 {
+	color: red;
+}
+p {
+	color: blue;
+	text-decoration: underline solid blue;
+	background-color: red;
+}

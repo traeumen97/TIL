@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body > div {
+	width: 300px;
+	height: 300px;
+}
+body > div:first-child, body > div:last-child {
+	background-color: #000000;
+}
+body > :nth-child(4) > div:first-child {
+	width: 50px;
+	height: 50px;
+	background-color: #ff0000;
+}
+body > div:nth-last-child(2) > div:last-child {
+	width: 100px;
+	height: 100px;
+	background-color: #ffff00;
+}
+body > div:nth-child(4) > p:nth-of-type(1), body > div:nth-child(4) > p:last-of-type {
+	font-weight: bold;
+	background-color: #FFB6C1;
+}
+div > p:only-child {
+	color: #ffffff;
+}
+body > div:empty {
+	background-color: #cceeff;
+}

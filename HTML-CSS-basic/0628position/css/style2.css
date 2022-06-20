@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div {
+	width: 500px;
+	height: 400px;
+	background-color: black;
+	position: relative;
+}
+body > div > div {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+}
+body > div > div > div {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}

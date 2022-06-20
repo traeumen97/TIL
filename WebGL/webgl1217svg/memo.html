@@ -1,0 +1,28 @@
+<!-- svg는 xml이기 때문에 빈 요소로 사용할때에는 반드시 종료 슬레시를 넣어야한다. 
+
+1.
+<rect fill="red" />
+		
+		^
+
+2.
+rect {
+	fill: red;
+}
+!css가 html 지정속성 이김!
+		
+		^ - 적용 우선순위
+3.
+<rect style="fill:red;" />
+html에 style 속성 사용 x
+
+모든 도형에 사용할수있는 속성들(path도 사용가능)
+
+- fill. fill-opacity
+- stroke, stroke-width, stroke-opacity
+
+fill, stroke 따로 줄거 아니며 그냥 css opacity 사용
+ex) -opacity: 0.5;
+
+
+-->

@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body > div {
+	width: 500px;
+}
+body > div > div {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+	background-color: #000000;
+	-webkit-transition-property: transform;
+	-ms-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 3s;
+	-ms-transition-duration: 3s;
+	transition-duration: 3s;
+}
+body > div > div:first-child {
+	-webkit-transition-timing-function: linear;
+	-ms-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+body > div > div:nth-child(2) {
+	-webkit-transition-timing-function: ease;
+	-ms-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+body >div > div:nth-child(3) {
+	-webkit-transition-timing-function: ease-in-out;
+	-ms-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+body > div > div:nth-child(4) {
+	-webkit-transition-timing-function: ease-in;
+	-ms-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+}
+body > div > div:nth-child(5) {
+	-webkit-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+body > div > div:nth-child(6) {
+	-webkit-transition-timing-function: steps(3, start);
+	-ms-transition-timing-function: steps(3, start);
+	transition-timing-function: steps(3, start);
+}
+body > div > div:nth-child(7) {
+	-webkit-transition-timing-function: steps(3, end);
+	-ms-transition-timing-function: steps(3, end);
+	transition-timing-function: steps(3, end);
+}
+body > div:hover > div {
+	-webkit-transform: translateX(200px);
+	-ms-transform: translateX(200px);
+	transform: translateX(200px);
+}

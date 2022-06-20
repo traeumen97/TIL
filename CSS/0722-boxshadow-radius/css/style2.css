@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+div:first-child {
+	width: 100px;
+	height: 100px;
+	background-color: #000000;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+div:nth-child(2) {
+	width: 100px;
+	height: 100px;
+	background-color: #ff0000;
+	-webkit-border-radius: 80px 20px 0 20px;
+	-moz-border-radius: 80px 20px 0 20px;
+	border-radius: 80px 20px 0 20px;
+}
+div:nth-child(3) {
+	width: 200px;
+	height: 100px;
+	background-color: #000000;
+	-webkit-border-radius: 100px 100px 100px 100px/50px 50px 50px 50px;
+	-moz-border-radius: 100px 100px 100px 100px/50px 50px 50px 50px;
+	border-radius: 100px 100px 100px 100px/50px 50px 50px 50px;
+}
+div:nth-child(4) {
+	width: 60px;
+	height: 100px;
+	background-color: #ff0000;
+	-webkit-border-radius: 30px 30px 30px 30px/50px 50px 50px 50px;
+	-moz-border-radius: 30px 30px 30px 30px/50px 50px 50px 50px;
+	border-radius: 30px 30px 30px 30px/50px 50px 50px 50px;
+}
+div:nth-child(5) {
+	width: 100px;
+	height: 100px;
+	background-color: #000000;
+	-webkit-border-top-left-radius: 100px;
+	-moz-border-top-left-radius: 100px;
+	border-top-left-radius: 100px;
+	-webkit-border-bottom-right-radius: 100px;
+	-moz-border-bottom-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+}

@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div {
+	width: 400px;
+	border: 5px solid black;
+}
+div.box1 {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	float: left;
+}
+div.box2 {
+	width: 200px;
+	height: 400px;
+	background-color: blue;
+	float: right;
+}
+div.box3 {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	float: left;
+}
+br {
+	clear: both;
+}

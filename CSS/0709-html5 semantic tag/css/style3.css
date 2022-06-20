@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.clear {
+	clear: both;
+}
+#header {
+	background-color: black;
+}
+#header > .headerinner {
+		width: 1200px;
+		height: auto;
+		margin: 0 auto;
+		background-color:  skyblue;
+		padding: 10px 10px;
+}
+h1.logo {
+	float: left;
+	margin-top: 20px;	
+}
+.infolink, .mainmenu {
+	float: right;
+}
+.headerinner ul > li {
+	display: inline-block;
+	margin: 5px 5px 10px  0;
+}
+#footer {
+	background-color: black;
+}
+.footerinner {
+	background-color: navy;
+	margin: 0 auto;
+	width: 1200px;
+	padding: 10px 10px;
+}
+.guide > ul > li > a, span {
+	color: white;
+}
+.copyright {
+	color: grey;
+}
+.footerlogo {
+	color: white;
+}
+div.guide {
+	display: inline-block;
+}
+div.guide li {
+	display: inline-block;
+	margin-left: 10px;
+}
+div.guide li > a {
+	display: block;
+	padding: 10px;
+}
+span {
+	margin-left: 20px;
+}
+p {
+	margin-left: 110px;
+}
+#contentsArea {
+	background-color: grey;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+div.wrap {
+	background-color: lightgrey;
+	padding: 20px;
+}
+div.wrap > section > article {
+	width: 590px;
+	height: 250px;
+	background-color: white;
+}
+.wrap:first-child {
+	margin-bottom: 20px;
+}
+.secinner {
+	width: 1200px;
+	margin: 0 auto;
+}
+.secinner > article:first-child {
+	float: left;
+}
+.secinner > article:last-child {
+	float: right;
+}
+
+
+

@@ -1,0 +1,28 @@
+p {
+	width:100px;
+	height: 100px;
+	background-color: yellow;
+	border-width: 10px;
+	border-color: red;
+	border-style: dashed;
+}
+div {
+	width:100px;
+	height: 100px;
+	background-color: black;
+}
+span {
+	background-color: green;
+	padding: 50px;
+	margin: 50px;
+}
+div {
+	border-width: 5px;
+	border-style: solid;
+}
+div.box1 {
+	border-color: blue;
+}
+div.box2 {
+	border-color: green;
+}

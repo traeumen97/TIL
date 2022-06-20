@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+div > div {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+body > div > div:nth-child(3) {
+	float: left;
+	clear: both;
+}
+body > div:first-child > div:first-child {
+	background-color: #D2D2FF;
+	-webkit-border-radius: 200px 0 40px 0;
+	-moz-border-radius: 200px 0 40px 0;
+	border-radius: 200px 0 40px 0;
+}
+body > div:first-child > div:nth-child(2) {
+	background-color: #C8C8FF;
+	-webkit-border-radius: 0 200px 0 40px;
+	-moz-border-radius: 0 200px 0 40px;
+	border-radius: 0 200px 0 40px;
+}
+body > div:first-child > div:nth-child(3) {
+	background-color: #B4B4FF;
+	-webkit-border-radius: 0 40px 0 200px;
+	-moz-border-radius: 0 40px 0 200px;
+	border-radius: 0 40px 0 200px;
+}
+body > div:first-child > div:nth-child(4) {
+	background-color: #A0A0FF;
+	-webkit-border-radius: 40px 0 200px 0;
+	-moz-border-radius: 40px 0 200px 0;
+	border-radius: 40px 0 200px 0;
+}
+body > div:nth-child(2) > div:first-child {
+	background-color: #FFD2D7;
+	-webkit-border-radius: 100px 40px 0 40px;
+	-moz-border-radius: 100px 40px 0 40px;
+	border-radius: 100px 40px 0 40px;
+}
+body > div:nth-child(2) > div:nth-child(2) {
+	background-color: #FFC8CD;
+	-webkit-border-radius: 40px 100px 40px 0;
+	-moz-border-radius: 40px 100px 40px 0;
+	border-radius: 40px 100px 40px 0;
+}
+body > div:nth-child(2) > div:nth-child(3) {
+	background-color: #FFBEC3;
+	-webkit-border-radius: 40px 0 40px 100px;
+	-moz-border-radius: 40px 0 40px 100px;
+	border-radius: 40px 0 40px 100px;
+}
+body > div:nth-child(2) > div:nth-child(4) {
+	background-color: #FFB4B9;
+	-webkit-border-radius: 0 40px 100px 40px;
+	-moz-border-radius: 0 40px 100px 40px;
+	border-radius: 0 40px 100px 40px;
+}
+body > div:nth-child(3) > div:first-child {
+	background-color: #FAEB78;
+	-webkit-border-radius: 40px 200px 20px 200px;
+	-moz-border-radius: 40px 200px 20px 200px;
+	border-radius: 40px 200px 20px 200px;
+}
+body > div:nth-child(3) > div:nth-child(2) {
+	background-color: #FFDC3C;
+	-webkit-border-radius: 200px 40px 200px 20px;
+	-moz-border-radius: 200px 40px 200px 20px;
+	border-radius: 200px 40px 200px 20px;
+}
+body > div:nth-child(3) > div:nth-child(3) {
+	background-color: #FFC81E;
+	-webkit-border-radius: 200px 20px 200px 40px;
+	-moz-border-radius: 200px 20px 200px 40px;
+	border-radius: 200px 20px 200px 40px;
+}
+body > div:nth-child(3) > div:nth-child(4) {
+	background-color: #FFB400;
+	-webkit-border-radius: 20px 200px 40px 200px;
+	-moz-border-radius: 20px 200px 40px 200px;
+	border-radius: 20px 200px 40px 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

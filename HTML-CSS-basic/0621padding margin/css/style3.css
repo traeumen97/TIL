@@ -1,0 +1,16 @@
+div.area {
+	background-color: yellow;
+	padding-top: 100px;
+}
+div.contents {
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	margin: 0 auto;
+}
+p {
+	width: 255px;
+	background-color: black;
+	color: white;
+	margin: 0 auto;
+}

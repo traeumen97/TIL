@@ -1,0 +1,18 @@
+div span {
+	background-color: yellow;
+}
+div > span {
+	font-size: 30px;
+}
+div > div > p > span {
+	color: red;
+}
+body > div > span {
+	font-weight: bold;
+}
+body > span {
+	
+}
+body > span, p.text, body > div > div p{
+	background-color: green;
+}

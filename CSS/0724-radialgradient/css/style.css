@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+div:first-child {
+	width: 500px;
+	height:500px;
+	border: 1px solid #000000;
+	background-image: -webkit-radial-gradient(#000000, #ff0000, #0000ff, #ffffff);
+	background-image: -mozradial-gradient(#000000, #ff0000, #0000ff, #ffffff);
+	background-image: -ms-radial-gradient(#000000, #ff0000, #0000ff, #ffffff);
+	background-image: -o-radial-gradient(#000000, #ff0000, #0000ff, #ffffff);
+	background-image: radial-gradient(#000000, #ff0000, #0000ff, #ffffff);
+}
+div:last-child {
+	width: 300px;
+	height: 400px;
+	background-image: -webkit-radial-gradient(#000000, #ff0000, #0000ff, #ffffff);
+	background-image: -moz-radial-gradient(#000000, #ff0000, #0000ff, #ffffff);
+	background-image: -ms-radial-gradient(#000000, #ff0000, #0000ff, #ffffff);
+	background-image: -o-radial-gradient(#000000, #ff0000, #0000ff, #ffffff);
+	background-image: radial-gradient(#000000, #ff0000, #0000ff, #ffffff);
+}

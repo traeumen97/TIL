@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.bxslider.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.bxslider.css">
+<style type="text/css">
+*{margin:0;padding:0;}
+li{list-style:none;}
+.topslider{width:100%;height:550px;overflow:hidden;border:2px solid #000000;}
+.bxslider{width:100%;height:500px;}
+.bxslider img{width:100%;height:500px;}
+
+.leftslider{width:400px;height:350px;float:left;
+border:2px solid #000000;}
+.bxslider1{width:400px;height:300px;}
+.bxslider1 img{width:400px;height:300px;}
+
+.rightslider{width:300px;height:350px;float:right;
+border:2px solid #000000;}
+.bxslider2{width:300px;height:300px;}
+.bxslider2 img{width:300px;height:300px;}
+</style>
+</head>
+
+<body>
+<div class="topslider">
+<ul class="bxslider">
+<li><img src="0052_foodsense.jpg" alt="img1"></li>	
+<li><img src="0140_foodsense.jpg" alt="img2"></li>	
+<li><img src="0219_foodsense.jpg" alt="img3"></li>
+<li><img src="0232_foodsense.jpg" alt="img4"></li>	
+</ul>
+</div>
+
+<div class="leftslider">
+<ul class="bxslider1">
+<li><img src="0052_foodsense.jpg" alt="img1"></li>	
+<li><img src="0140_foodsense.jpg" alt="img2"></li>	
+<li><img src="0219_foodsense.jpg" alt="img3"></li>
+<li><img src="0232_foodsense.jpg" alt="img4"></li>	
+</ul>
+</div>
+
+<div class="rightslider">
+<ul class="bxslider2">
+<li><img src="0052_foodsense.jpg" alt="img1"></li>	
+<li><img src="0140_foodsense.jpg" alt="img2"></li>	
+<li><img src="0219_foodsense.jpg" alt="img3"></li>
+<li><img src="0232_foodsense.jpg" alt="img4"></li>	
+</ul>
+</div>
+<script>
+$(document).ready(function(e) {
+	slider = $('.bxslider').bxSlider();
+slider.startAuto();
+});
+</script>
+<script>
+$(document).ready(function(e) {
+	slider1 = $('.bxslider1').bxSlider();
+slider1.startAuto();
+});
+</script>
+<script>
+$(document).ready(function(e) {
+	slider2 = $('.bxslider2').bxSlider();
+slider2.startAuto();
+});
+</script>
+<!--slidernext-->
+
+</body>
+</html>

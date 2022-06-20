@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body > div {
+	width: 880px;
+	margin: 0 auto;
+}
+body > div > div {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+}
+body > div > div:first-child {
+	background-image: radial-gradient(circle at 40px 40px, #CBFF75, #c1ff6b, #9ef048, #80e12a, #4AE000, #00B500);
+	border-radius: 120px 15px 120px 35px;
+}
+body > div > div:nth-child(2) {
+	background-image: radial-gradient(circle farthest-corner at 60px 40px, #FFEB46, #ffe13c, #ffd732, #ffc31e, #ffaf0a, #ff9100, #ff8200, #ff9000);
+	border-radius: 100px;
+}
+body > div > div:nth-child(3) {
+	border-radius: 100px;
+	background-image: radial-gradient(circle farthest-corner at 60px 40px, #ffeb46, #ffe13c, #ffd732, #ffc31e, #ffaf0a, #ff9b00);
+}
+body > div > div:nth-child(4) {
+	border-radius: 20px 130px 40px 110px;
+	background-image: radial-gradient(circle at 0 0, #ffeb46, #ffe13c, #ffd732, #ffc31e, #ffaf0a, #ff9b00);
+}

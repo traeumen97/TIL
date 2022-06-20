@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html  lang="ko">
+
+    <head>
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+	   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  
+          <title>Food Sense ｜ Plant-Based Eating At Its Best</title>
+	   <meta name="description" content="Blueprint: Horizontal Drop-Down Menu" />
+       <meta name="keywords" content="html5" />
+       <meta name="author" content="cocomiz" />
+       <meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+ 
+ <!-- Pulled from http://code.google.com/p/html5shiv/ -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="all">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="blog.css">
+
+<!--basic-js1-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+<!--basic-js2-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ <style>
+@media screen and (max-width:600px) {
+.wrap{width: 320px;}
+
+*{margin:0px; padding:0px;}
+body {font-family: "Georgia", serif; font-size: 12px; color: #333;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none; color: #333;}
+h1, h2, h3, h4, h5, h6 {font-family: "Georgia", serif;}
+
+.hide {display: none;}
+.screen_out {text-indent: -9999px; overflow: hidden; display: block; width: 0; height: 0;}
+.hidetext {position: absolute; top: -9999em;}
+
+.wrap {width: 320px; margin: 10px auto; overflow: hidden;}
+header {width: 320px; float: left; position: relative; padding-top: 50px;}
+h1 {text-indent: -9999em; overflow: hidden; background: url(../img/food-sense.png) no-repeat 100px 0; width: 320px; float: left; height: 120px;}
+nav {width: 320px; float: left; margin-top: 20px; border-bottom: 2px solid #e5e5e5; position: absolute; top: 0; left: 0;}
+nav ul {float: left;}
+nav ul li {padding: 5px; float: left; padding-left: 10px;}
+nav ul li a {font-size: 12px; color: #34AC98;}
+nav ul li a:hover {color: #ee6635;}
+
+.aside1 {clear: both; width: 150px; float: left; margin-right: 20px; margin-top: 30px; display: none;}
+.aside1 h2 {width: 150px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px; margin-bottom: 70px;}
+.aside1 p {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(img/icon-twitter-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside1 p:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.aside2 {width: 150px; margin-top: 30px; float: left; display: none;}
+.aside2 h2 {width: 150px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside2 .bottom_p1 {font-size: 10px; font-style: italic; padding-top: 10px; line-height: 1.7em;}
+.aside2 .bottom_p2 {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(img/icon-facebook-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside2 .bottom_p2:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.mainContents {width: 320px; float: left;}
+    
+.blog {width: 320px; float: left;}
+.blog header {width: 320px; float: left; border-bottom: 2px solid #e5e5e5;}
+.blog h2 {font-size: 30px; font-weight: 400; padding-left: 60px; background: url(../img/blog.PNG) no-repeat; line-height: 2.2em;}
+.blog header p {font-style: italic; font-size: 10px; margin-bottom: 30px; margin-top: 5px; line-height: 1.5em;}
+
+.news {width: 320px; margin-right: 10px; float: left;}
+.news h3 a {font-size: 24px; font-weight: 400; color: #34AC98;}
+
+.news1 {margin-top: 40px;}
+.news1_left {width: 200px; float: left; margin-right: 5px;}
+.news1_left_p {font-size: 10px; margin: 20px 0; line-height: 1.6em;}
+.news1_left p a {color: #34AC98; font-size: 15px; border-bottom: 2px dotted #eee;}
+
+.news1 > img {margin-top: 20px; border: 1px solid #eee; padding: 5px; width: 100px; float: left;}
+.news1 footer {clear: both; border-bottom: 3px dotted #eee; padding-bottom: 20px;}
+.news1 footer ul {overflow: hidden; padding: 5px 0;}
+.news1 footer ul li {display: inline-block; background: url(../img/line.jpg) repeat-y 0 0; padding: 0 20px; margin-left: -15px;}
+.news1 footer ul li span {display: block; color: #333; font-size: 15px; font-style: italic;}
+.news1 footer ul li:first-child {color: #aaa;}
+.news1 footer ul li:nth-child(2) a {font-size: 11px; color: #34AC98;}
+.news1 footer ul li:last-child a {font-size: 11px; color: #34AC98;}
+.news1 footer ul li a {}
+
+.older {font-size: 11px; background-color: #fff; border: 1px solid #e5e5e5; border-radius: 5px; width: 110px; line-height: 2.7em; color: #34ac98; float: right; margin-top: 40px;}
+.older:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.link {width: 190px; float: left;}
+.link_top {margin-top: 40px;}
+.link_top_p {background: url(../img/wifi.PNG) no-repeat 0 0; padding-left: 25px; padding-top: 6px; padding-bottom: 2px; color: #34ac98; float: left;}
+.link_top_p2 {color: #34ac98; font-size: 10px; width: 15px; line-height: 15px; background-color: #eee; border-radius: 150px; text-align: center; float: left; margin-top: 5px; margin-left: 7px;}
+.link_top_p:hover {color: #ee6635; cursor: pointer;}
+.link_top_p2:hover {color: #ee6635; cursor: pointer;}
+
+.categories {clear: both; padding-top: 30px;}
+.categories p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px;}
+.categories ul {padding-top: 10px; padding-bottom: 20px;}
+.categories ul li {padding-top: 7px;}
+.categories ul li a {color: #34ac98; font-size: 10px;}
+.categories ul li a:hover {color: #ee6635;}
+.search {}
+.go {width: 35px; line-height: 1.2em; margin-left: 10px;}
+
+.archives {}
+.archives p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.archives ul {padding-top: 10px; padding-bottom: 20px;}
+.archives ul li {padding-top: 7px;}
+.archives ul li a {color: #34ac98; font-size: 10px;}
+.archives ul li a:hover {color: #ee6635;}
+
+.weeklynewsletter {}
+.weekly_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.weekly_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.subscride {width: 80px; line-height: 1.2em; margin-top: 10px;}
+
+.bottom {clear: both; width: 320px; float: left; border-top: 2px solid #e5e5e5; padding-top: 20px; margin-bottom: 30px; position: relative; margin-top: 40px;}
+.bottom_list {overflow: hidden;}
+.bottom_list li {display: inline; padding: 0 5px; background: url(img/list.jpg) repeat-y; margin-left: -2px;}
+.bottom_list li a {color: #34ac98; font-size: 10px;}
+.bottom_list li a:hover {color: #ee6635;}
+.bottom p {color: #aaa; line-height: 2em; padding-left: 2px; font-size: 10px;}
+
+.bottom_sns {position: absolute; top: 20px; right: 0;}
+.bottom_sns ul {}
+.bottom_sns ul li {display: inline; float: left; padding-left: 5px;}
+.bottom_sns ul li a {display: block; width: 32px; height: 32px; opacity: 0.4; text-indent: -9999em;}
+.bottom_sns ul li a:hover {opacity: 1;}
+
+.bottom_sns .twitter a {background: url(../img/icon-twitter.png) no-repeat -15px 0;}
+.bottom_sns .facebook a {background: url(../img/icon-facebook.png) no-repeat -15px 0;}
+.bottom_sns .rss a {background: url(../img/icon-rss.png) no-repeat -15px 0;}
+}
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+*{margin: 0; padding: 0;}
+body {font-family: "Georgia", serif; font-size: 12px; color: #333;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none; color: #333;}
+h1, h2, h3, h4, h5, h6 {font-family: "Georgia", serif;}
+
+.hide {display: none;}
+.screen_out {text-indent: -9999px; overflow: hidden; display: block; width: 0; height: 0;}
+.hidetext {position: absolute; top: -9999em;}
+
+.wrap {width: 580px; margin: 0 auto;}
+header {width: 580px; float: left;}
+h1 {text-indent: -9999em; overflow: hidden; background: url(../img/food-sense.png) no-repeat left 0; width: 120px; float: left; height: 120px;}
+nav {width: 460px; float: right; margin-top: 40px; margin-bottom: 10px;}
+nav ul {width: 440px; float: right;}
+nav ul li {padding: 20px; padding-top: 50px; float: left; text-align: right;}
+nav ul li a {font-size: 12px; color: #34AC98; font-style: italic;}
+nav ul li:first-child {background: url(../img/nav-tastemakers.png) no-repeat 40px 10px;}
+nav ul li:first-child:hover {background: url(../img/nav-tastemakers.png) no-repeat 45px 10px;}
+nav ul li:nth-child(2) {background: url(../img/nav-blog.png) no-repeat 15px 10px;}
+nav ul li:nth-child(2):hover {background: url(../img/nav-blog.png) no-repeat 25px 10px;}
+nav ul li:nth-child(3) {background: url(../img/nav-alist.png) no-repeat 30px 10px;}
+nav ul li:nth-child(3):hover {background: url(../img/nav-alist.png) no-repeat 35px 10px;}
+nav ul li:nth-child(4) {background: url(../img/nav-contribute.png) no-repeat 30px 10px;}
+nav ul li:nth-child(4):hover {background: url(../img/nav-contribute.png) no-repeat 35px 10px;}
+nav ul li:last-child {background: url(../img/nav-about.png) no-repeat 20px 10px;}
+nav ul li:last-child:hover {background: url(../img/nav-about.png) no-repeat 25px 10px;}
+nav ul li a:hover {color: #ee6635;}
+
+.aside1 {width: 190px; float: left; margin-top: 30px; display: none;}
+.aside1 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px; margin-bottom: 70px;}
+.aside1 p {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(img/icon-twitter-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside1 p:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.aside2 {width: 190px; margin-top: 30px; float: left; display: none;}
+.aside2 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside2 .bottom_p1 {font-size: 10px; font-style: italic; padding-top: 10px; line-height: 1.7em;}
+.aside2 .bottom_p2 {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(../img/icon-facebook-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside2 .bottom_p2:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.mainContents {width: 580px; float: left;}
+
+.blog {width: 580px; float: left; margin-top: 40px;}
+.blog header {width: 580px; float: left; border-bottom: 2px solid #e5e5e5;}
+.blog h2 {font-size: 30px; font-weight: 400; padding-left: 60px; background: url(../img/blog.PNG) no-repeat; line-height: 2.2em;}
+.blog header p {font-style: italic; font-size: 12px; margin-bottom: 30px; margin-top: 5px; line-height: 1.5em;}
+
+.news {width: 465px; margin-right: 10px; float: left;}
+.news h3 a {font-size: 24px; font-weight: 400; color: #34AC98;}
+
+.news1 {margin-top: 40px;}
+.news1_left {width: 220px; float: left; margin-right: 10px;}
+.news1_left_p {font-size: 10px; margin: 20px 0; line-height: 1.6em; text-align: justify;}
+.news1_left p a {color: #34AC98; font-size: 15px; border-bottom: 2px dotted #eee;}
+
+.news1 > img {margin-top: 20px; border: 1px solid #eee; padding: 5px;}
+.news1 footer {clear: both; border-bottom: 3px dotted #eee; padding-bottom: 20px; margin-top: 10px; margin-right: 10px;}
+.news1 footer ul {overflow: hidden; padding: 5px 0;}
+.news1 footer ul li {display: inline-block; background: url(../img/line.jpg) repeat-y 0 0; padding: 0 20px; margin-left: -15px;}
+.news1 footer ul li span {display: block; color: #333; font-size: 15px; font-style: italic;}
+.news1 footer ul li:first-child {color: #aaa;}
+.news1 footer ul li:nth-child(2) a {font-size: 11px; color: #34AC98;}
+.news1 footer ul li:last-child a {font-size: 11px; color: #34AC98;}
+.news1 footer ul li a {}
+
+.older {font-size: 11px; background-color: #fff; border: 1px solid #e5e5e5; border-radius: 5px; width: 110px; line-height: 2.7em; color: #34ac98; float: right; margin-top: 40px;}
+.older:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.link {width: 105px; float: right;}
+.link_top {margin-top: 40px;}
+.link_top_p {background: url(../img/wifi.PNG) no-repeat 0 0; padding-left: 25px; padding-top: 6px; padding-bottom: 2px; color: #34ac98; float: left; font-size: 10px;}
+.link_top_p2 {color: #34ac98; font-size: 10px; width: 15px; line-height: 15px; background-color: #eee; border-radius: 150px; text-align: center; float: left; margin-top: 5px; margin-left: 7px; display: none;}
+.link_top_p:hover {color: #ee6635; cursor: pointer;}
+.link_top_p2:hover {color: #ee6635; cursor: pointer;}
+
+.categories {clear: both; padding-top: 30px;}
+.categories p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px;}
+.categories ul {padding-top: 10px; padding-bottom: 20px;}
+.categories ul li {padding-top: 2px;}
+.categories ul li a {color: #34ac98; font-size: 10px;}
+.categories ul li a:hover {color: #ee6635;}
+.go {width: 35px; line-height: 1.2em; margin-top: 5px;}
+
+.archives {}
+.archives p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.archives ul {padding-top: 10px; padding-bottom: 20px;}
+.archives ul li {padding-top: 2px;}
+.archives ul li a {color: #34ac98; font-size: 10px;}
+.archives ul li a:hover {color: #ee6635;}
+
+.weeklynewsletter {}
+.weekly_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.weekly_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.subscride {width: 80px; line-height: 1.2em; margin-top: 5px;}
+    
+.bottom {clear: both; width: 580px; float: left; border-top: 2px solid #e5e5e5; padding-top: 20px; margin-bottom: 30px; position: relative; margin-top: 30px;}
+.bottom_list {overflow: hidden;}
+.bottom_list li {display: inline; padding: 0 5px; background: url(../img/list.jpg) repeat-y; margin-left: -2px;}
+.bottom_list li a {color: #34ac98; font-size: 12px;}
+.bottom_list li a:hover {color: #ee6635;}
+.bottom p {color: #aaa; line-height: 2em; padding-left: 2px;}
+
+.bottom_sns {position: absolute; top: 20px; right: 0;}
+.bottom_sns ul {}
+.bottom_sns ul li {display: inline; float: left; padding-left: 5px;}
+.bottom_sns ul li a {display: block; width: 32px; height: 32px; opacity: 0.4; text-indent: -9999em;}
+.bottom_sns ul li a:hover {opacity: 1;}
+
+.bottom_sns .twitter a {background: url(../img/icon-twitter.png) no-repeat -15px 0;}
+.bottom_sns .facebook a {background: url(../img/icon-facebook.png) no-repeat -15px 0;}
+.bottom_sns .rss a {background: url(../img/icon-rss.png) no-repeat -15px 0;}
+}
+
+@media screen and (min-width:1024px) {
+*{margin:0; padding:0;}
+body {font-family: "Georgia", serif; font-size: 12px; color: #333;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none; color: #333;}
+h1, h2, h3, h4, h5, h6 {font-family: "Georgia", serif;}
+
+.hide {display: none;}
+.screen_out {text-indent: -9999px; overflow: hidden; display: block; width: 0; height: 0;}
+.hidetext {position: absolute; top: -9999em;}
+
+.wrap {width: 950px; margin: 40px auto; overflow: hidden;}
+header {width: 190px; margin-right: 10px; float: left;}
+h1 {width: 120px; height: 121px; float: left; text-indent: -9999em; overflow: hidden; white-space: nowrap; background: url(../img/food-sense.png) no-repeat 0 0;}
+nav {width: 190px; float: left; margin-top: 10px; margin-bottom: 50px;}
+nav ul {width: 190px; float: left;}
+nav ul li {width: 190px; float: left; text-indent: 55px; line-height: 4.2em;}
+nav ul li a {font-size: 15px; color: #34AC98; font-style: italic;}
+nav ul li:first-child {background: url(../img/nav-tastemakers.png) no-repeat 10px 10px;}
+nav ul li:first-child:hover {background: url(../img/nav-tastemakers.png) no-repeat 15px 10px;}
+nav ul li:nth-child(2) {background: url(../img/nav-blog.png) no-repeat 10px 10px;}
+nav ul li:nth-child(2):hover {background: url(../img/nav-blog.png) no-repeat 15px 10px;}
+nav ul li:nth-child(3) {background: url(../img/nav-alist.png) no-repeat 10px 10px;}
+nav ul li:nth-child(3):hover {background: url(../img/nav-alist.png) no-repeat 15px 10px;}
+nav ul li:nth-child(4) {background: url(../img/nav-contribute.png) no-repeat 10px 10px;}
+nav ul li:nth-child(4):hover {background: url(../img/nav-contribute.png) no-repeat 15px 10px;}
+nav ul li:last-child {background: url(../img/nav-about.png) no-repeat 10px 10px;}
+nav ul li:last-child:hover {background: url(../img/nav-about.png) no-repeat 15px 10px;}
+nav ul li a:hover {color: #ee6635;}
+
+.aside1 {width: 190px;}
+.aside1 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside1 p {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(../img/icon-twitter-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside1 p:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.aside2 {width: 190px; margin-top: 30px;}
+.aside2 h2 {width: 160px; font-weight: 400; border-bottom: 2px dotted #eee; line-height: 1.4em; font-size: 11px; padding-bottom: 3px;}
+.aside2 .bottom_p1 {font-size: 10px; font-style: italic; padding-top: 10px; line-height: 1.7em;}
+.aside2 .bottom_p2 {border: 1px solid #e5e5e5; color: #34ac98; font-size: 10px; font-style: italic; width: 110px; line-height: 2.5em; border-radius: 5px; padding-left: 30px; background: url(../img/icon-facebook-16.png) no-repeat; background-position: 8px 4px; margin-top: 10px;}
+.aside2 .bottom_p2:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+    
+.blog {width: 750px; float: right; margin-top: 40px;}
+.blog header {width: 750px; float: left; border-bottom: 2px solid #e5e5e5;}
+.blog h2 {font-size: 30px; font-weight: 400; padding-left: 60px; background: url(../img/blog.PNG) no-repeat; line-height: 2.2em;}
+.blog header p {font-style: italic; font-size: 14px; margin-bottom: 30px; margin-top: 5px; line-height: 1.5em;}
+
+.news {width: 550px; margin-right: 10px; float: left;}
+.news h3 a {font-size: 24px; font-weight: 400; color: #34AC98;}
+
+.news1 {margin-top: 40px;}
+.news1_left {width: 320px; float: left; margin-right: 10px;}
+.news1_left_p {font-size: 12px; margin: 20px 0; line-height: 1.6em;}
+.news1_left p a {color: #34AC98; font-size: 15px; border-bottom: 2px dotted #eee;}
+
+.news1 > img {margin-top: 20px; border: 1px solid #eee; padding: 5px;}
+.news1 footer {clear: both; border-bottom: 3px dotted #eee; padding-bottom: 20px;}
+.news1 footer ul {overflow: hidden; padding: 5px 0;}
+.news1 footer ul li {display: inline-block; background: url(../img/line.jpg) repeat-y 0 0; padding: 0 20px; margin-left: -15px;}
+.news1 footer ul li span {display: block; color: #333; font-size: 15px; font-style: italic;}
+.news1 footer ul li:first-child {color: #aaa;}
+.news1 footer ul li:nth-child(2) a {font-size: 11px; color: #34AC98;}
+.news1 footer ul li:last-child a {font-size: 11px; color: #34AC98;}
+.news1 footer ul li a {}
+
+.older {font-size: 11px; background-color: #fff; border: 1px solid #e5e5e5; border-radius: 5px; width: 110px; line-height: 2.7em; color: #34ac98; float: right; margin-top: 40px;}
+.older:hover {color: #ee6635; background-color: #eff8f7; cursor: pointer;}
+
+.link {width: 190px; float: right;}
+.link_top {margin-top: 40px;}
+.link_top_p {background: url(../img/wifi.PNG) no-repeat 0 0; padding-left: 25px; padding-top: 6px; padding-bottom: 2px; color: #34ac98; float: left;}
+.link_top_p2 {color: #34ac98; font-size: 10px; width: 15px; line-height: 15px; background-color: #eee; border-radius: 150px; text-align: center; float: left; margin-top: 5px; margin-left: 7px;}
+.link_top_p:hover {color: #ee6635; cursor: pointer;}
+.link_top_p2:hover {color: #ee6635; cursor: pointer;}
+
+.categories {clear: both; padding-top: 30px;}
+.categories p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px;}
+.categories ul {padding-top: 10px; padding-bottom: 20px;}
+.categories ul li {padding-top: 7px;}
+.categories ul li a {color: #34ac98;}
+.categories ul li a:hover {color: #ee6635;}
+.search {}
+.go {width: 35px; line-height: 1.2em; margin-left: 10px;}
+
+.archives {}
+.archives p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.archives ul {padding-top: 10px; padding-bottom: 20px;}
+.archives ul li {padding-top: 7px;}
+.archives ul li a {color: #34ac98}
+.archives ul li a:hover {color: #ee6635;}
+
+.weeklynewsletter {}
+.weekly_p {font-size: 15px; font-style: italic; color: #88939e; border-bottom: 2px dotted #eee; padding-bottom: 5px; margin-top: 30px;}
+.weekly_p2 {padding-top: 10px; line-height: 1.5em; font-size: 10px; color: #8b8b88; padding-bottom: 20px;}
+.subscride {width: 80px; line-height: 1.2em; margin-top: 10px;}
+    
+.bottom {clear: both; width: 950px; float: left; border-top: 2px solid #e5e5e5; padding-top: 20px; margin-bottom: 30px; position: relative; margin-top: 40px;}
+.bottom_list {overflow: hidden;}
+.bottom_list li {display: inline; padding: 0 5px; background: url(../img/list.jpg) repeat-y; margin-left: -2px;}
+.bottom_list li a {color: #34ac98; font-size: 12px;}
+.bottom_list li a:hover {color: #ee6635;}
+.bottom p {color: #aaa; line-height: 2em; padding-left: 2px;}
+
+.bottom_sns {position: absolute; top: 20px; right: 0;}
+.bottom_sns ul {}
+.bottom_sns ul li {display: inline; float: left; padding-left: 5px;}
+.bottom_sns ul li a {display: block; width: 32px; height: 32px; opacity: 0.4; text-indent: -9999em;}
+.bottom_sns ul li a:hover {opacity: 1;}
+
+.bottom_sns .twitter a {background: url(../img/icon-twitter.png) no-repeat -15px 0;}
+.bottom_sns .facebook a {background: url(../img/icon-facebook.png) no-repeat -15px 0;}
+.bottom_sns .rss a {background: url(../img/icon-rss.png) no-repeat -15px 0;}      
+} 
+ </style>
+
+
+
+</head> 
+
+<body>
+<!--wrap 시작-->	
+<div class="wrap">
+	<header>
+	    <a href="../index.html"><h1>foodsense</h1></a>
+	    <nav>
+	        <h2 class="hidetext">navigation</h2>
+	        <ul>
+	            <li><a href="../tastemakers/tastemakers.html">Tastemakers</a></li>
+	            <li><a href="blog.html">Blog</a></li>
+	            <li><a href="../thealist/thealist.html">The A-List</a></li>
+	            <li><a href="../contribute/contribute.html">Contribute</a></li>
+	            <li><a href="../about/about.html">About</a></li>
+	        </ul>
+	    </nav>
+	</header><!-- header -->
+	
+	<section class="blog">
+    <header>
+	    <h2>Blog</h2>
+	    <p class="blog_p">Eat up the latest news, recipe collections, cooking tips, and personal journeys to a plant-based<br> life.</p>
+    </header>	    
+	    <section class="news">
+	        <h2 class="hidetext">article section</h2>
+	        
+	        <article class="news1">
+	            <h3><a href="#">2012’s Best Summer Cookbooks</a></h3>
+	            <div class="news1_left">
+                    <p class="news1_left_p">With the best of the season coming from<br> “orchards, farms and gardens,” NPR has put<br> together an impressive collection of 10 summer<br> cookbooks.</p>
+                    <p><a href="#">Continue reading »</a></p>
+	            </div>
+	            <img src="../img/cookbooks_blog.jpg" alt="img" width="200">
+	            <footer>
+	                <ul>
+	                    <li><time datetime="2012-05-23T00:00:00">2012 <span>May 23</span></time></li>
+	                    <li><img src="../img/blog_icon1.PNG" alt="comment"><br><a href="#">48 Comments</a></li>
+	                    <li><img src="../img/blog_icon2.PNG" alt="comment"><br><a href="#">cook</a></li>
+	                </ul>
+	            </footer>
+	        </article>
+	        
+	        <article class="news1">
+	            <h3><a href="#">How to Make Vegetable Chips</a></h3>
+	            <div class="news1_left">
+                    <p class="news1_left_p">About a month ago, I ate almost an entire box of kale chips. My brother and I were visiting our cousin in Brooklyn, and before a very thoughtfully prepared vegan dinner, she put out these kale chips from her local co-op.</p>
+                    <p><a href="#">Continue reading »</a></p>
+	            </div>
+	            <img src="../img/SweetPotatoChips.jpg" alt="img" width="200">
+	            <footer>
+	                <ul>
+	                    <li><time datetime="2012-05-17T00:00:00">2012 <span>May 17</span></time></li>
+	                    <li><img src="../img/blog_icon1.PNG" alt="comment"><br><a href="#">48 Comments</a></li>
+	                    <li><img src="../img/blog_icon2.PNG" alt="comment"><br><a href="#">cook</a></li>
+	                </ul>
+	            </footer>
+	        </article>
+	        
+	        <article class="news1">
+	            <h3><a href="#">Join us on Pinterest!</a></h3>
+	            <div class="news1_left">
+                    <p class="news1_left_p">If I could curate a cookbook for you, this would be it.</p>
+                    <p><a href="#">Continue reading »</a></p>
+	            </div>
+	            <img src="../img/Pinterest_Page_featured.png" alt="img" width="200">
+	            <footer>
+	                <ul>
+	                    <li><time datetime="2012-05-17T00:00:00">2012 <span>May 17</span></time></li>
+	                    <li><img src="../img/blog_icon1.PNG" alt="comment"><br><a href="#">48 Comments</a></li>
+	                    <li><img src="../img/blog_icon2.PNG" alt="comment"><br><a href="#">cook</a></li>
+	                </ul>
+	            </footer>
+	        </article>
+	        
+	        <article class="news1">
+	            <h3><a href="#">Recipes from a Sunday Supper</a></h3>
+	            <div class="news1_left">
+                    <p class="news1_left_p">I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this wonderful Sunday supper - eat them slowly, a little bit at a time, and make them last as long as possible? Or, eat them all up, a snack full of love, as soon as it was tea time on Monday afternoon…?</p>
+                    <p><a href="#">Continue reading »</a></p>
+	            </div>
+	            <img src="../img/Adithi_Dinner_blog.jpg" alt="img" width="200">
+	            <footer>
+	                <ul>
+	                    <li><time datetime="2012-05-15T00:00:00">2012 <span>May 15</span></time></li>
+	                    <li><img src="../img/blog_icon1.PNG" alt="comment"><br><a href="#">48 Comments</a></li>
+	                    <li><img src="../img/blog_icon2.PNG" alt="comment"><br><a href="#">cook</a></li>
+	                </ul>
+	            </footer>
+	        </article>
+	        <button type="button" class="older">Older Entries »</button>
+	        
+	    </section><!-- article section -->
+	    
+	    <section class="link">
+	        <h3 class="hidetext">link section</h2>
+	        <div class="link_top">      
+	        <p class="link_top_p">Subscribe via RSS</p>
+	        <p class="link_top_p2">?</p>
+	        </div>
+	        
+	        <article class="categories">
+            <p>Categories</p>
+	            <ul>
+	                <li><a href="#">Cook</a></li>
+	                <li><a href="#">Dine</a></li>
+	                <li><a href="#">Events</a></li>
+	                <li><a href="#">Know</a></li>
+	                <li><a href="#">Monologues</a></li>
+	                <li><a href="#">My Veg Life</a></li>
+	                <li><a href="#">Read</a></li>
+	                <li><a href="#">Shop</a></li>
+	                <li><a href="#">Ten Things</a></li>
+	            </ul>
+	            <form action="email.php" method="post">
+	            <input type="text" size="20" maxlength="20" placeholder="Search" class="search">
+	            <button type="button" class="go">Go</button>
+	        </form>
+	        </article>
+	        
+	        <article class="archives">
+	            <p>Archives</p>
+	            <ul>
+	                <li><a href="#">May 2012</a></li>
+	                <li><a href="#">April 2012</a></li>
+	                <li><a href="#">March 2012</a></li>
+	                <li><a href="#">February 2012</a></li>
+	                <li><a href="#">January 2012</a></li>
+	                <li><a href="#">December 2011</a></li>
+	                <li><a href="#">November 2011</a></li>
+	                <li><a href="#">October 2011</a></li>
+	                <li><a href="#">September 2011</a></li>
+	                <li><a href="#">August 2011</a></li>
+	                <li><a href="#">July 2011</a></li>
+	                <li><a href="#">June 2011</a></li>
+	                <li><a href="#">May 2011</a></li>
+	            </ul>
+	        </article>
+	        
+	        <article class="weeklynewsletter">
+            <p class="weekly_p">Food Sense Weekly Newsletter</p>
+	        <p class="weekly_p2">Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</p>
+	        <form action="email.php" method="post">
+	        <input type="Email" size="25" maxlength="20" placeholder="Email" class="such">
+	        <button type="button" class="subscride">Subscribe</button>
+	        </article>
+	    </section><!-- link section -->
+	</section><!-- blog -->
+	
+	<aside class="aside1">
+	    <h2>LATEST TWEET</h2>
+	    <p>Join the Conversation</p>
+	</aside>
+	
+	<aside class="aside2">
+	    <h2>LET'S BE FRIENDS</h2>
+	    <p class="bottom_p1">For weekly finds, community<br>recommendations, and more,<br> like us on Facebook</p>
+	    <p class="bottom_p2">Join the Community</p>
+	</aside><!-- aside -->
+	
+	<footer class="bottom">
+	    <ul class="bottom_list">
+	        <li><a href="#">Privacy Policy</a></li>
+	        <li><a href="#">Terms of Use</a></li>
+	        <li><a href="#">Contact</a></li>
+	    </ul>
+	    <p>© 2016 Food Sense, all rights reserved.</p>
+	    
+	    <div class="bottom_sns">
+	        <ul>
+	            <li class="twitter"><a href="#">Twitter</a></li>
+	            <li class="facebook"><a href="#">Facebook</a></li>
+	            <li class="rss"><a href="#">Rss</a></li>
+	        </ul>
+	    </div>
+	</footer><!-- footer -->
+	
+	
+	
+	
+</div><!--wrap-->
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<!--border radius-->
+<script>
+	$(function () {
+	  var nua = navigator.userAgent;
+	  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1);
+	  if (isAndroid) {
+	    $('select.form-control').removeClass('form-control').css('width', '100%');
+	  };
+	});
+</script>
+<!--border radius-->
+<!--ie8 important-->
+<script>
+ var s = document.createElement('div');
+s.innerHTML = "<section></section>";
+document.body.appendChild(s);
+ </script>
+ <script>
+$("body").append("<section></section>");
+ </script>
+ <!--ie8 important-->  
+  </body>
+
+</html>
